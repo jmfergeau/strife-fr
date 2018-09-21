@@ -1,0 +1,14 @@
+namespace = "Strife";
+include = "SCRIPT00";
+
+conversation
+{
+	actor = 14;
+	page
+	{
+		name = "BELDIN";
+		dialog = "I DON'T WANT ANY TROUBLE, STAY AWAY FROM ME. I'VE HAD ENOUGH TROUBLE WITH WHAT THAT BASTARD HARRIS DID TO ME. HE PROMISED ME MONEY, INSTEAD I GET TO LOOK FORWARD TO BEING \"QUESTIONED\" BY THE PROGRAMMER.";
+		drop = 173;
+		link = 0;
+	}
+}

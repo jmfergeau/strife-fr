@@ -1,0 +1,608 @@
+namespace = "Strife";
+include = "SCRIPT00";
+
+conversation
+{
+	actor = 49;
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC01";
+		dialog = "WELCOME TO THE LAST FLICKER OF HOPE. ONLY WE HAVE THE FREE WILL TO OPPOSE THE ORDER. WE HAVE THE SHARPEST SCIENTIFIC MINDS, AND MANY ABLE BODIES, BUT WE LACK THAT ONE REAL, UH... \"PROBLEM SOLVER\", WHO WILL GIVE US THE EDGE WE NEED. HELP US.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "ALL RIGHT, I ACCEPT.";
+			nomessage = "NO.  you don't have what i want for the  ALL RIGHT, I ACCEPT.!";
+			nextpage = 4;
+			closedialog = false;
+		}
+		choice
+		{
+			text = "NO THANKS!";
+			nomessage = "NO.  you don't have what i want for the  NO THANKS!!";
+			nextpage = 2;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC03";
+		dialog = "YOU MIGHT WANT TO RECONSIDER, SEEING THAT YOU'RE SURROUNDED BY HEAVILY ARMED ANGRY REBELS.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "ALL RIGHT, I'M IN!";
+			nomessage = "NO.  you don't have what i want for the  ALL RIGHT, I'M IN!!";
+			nextpage = 4;
+			closedialog = false;
+		}
+		choice
+		{
+			text = "NO THANKS.";
+			nomessage = "NO.  you don't have what i want for the  NO THANKS.!";
+			giveitem = 301;
+			nextpage = 3;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC04";
+		dialog = "THEN DIE IN SHAME AND DISHONOR.";
+		drop = 0;
+		link = 0;
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC02";
+		dialog = "GOOD, BLACKBIRD WILL CONTINUE TO BE YOUR GUIDE.  SHE'S TAKEN QUITE A SHINE TO YOU. TOGETHER YOU'VE GOT TO UNLOCK THE SECRETS OF THE ORDER AND THEIR INHUMAN SERVANTS. GET INSIDE AND TAKE THEM DOWN.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "WHERE DO I START?";
+			nomessage = "NO.  you don't have what i want for the  WHERE DO I START?!";
+			nextpage = 5;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC05";
+		dialog = "FRANKLY THE SITUATION IS A MESS. YOU MUST ACCOMPLISH SEVERAL MISSIONS TO PREPARE THE WAY FOR MORE ATTACKS ON THE ORDER. OUR LAST RAID WAS A DISASTER AND MOST OF OUR TROOPS WERE CAPTURED. I NEED YOU TO FREE THESE PRISONERS.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "I THINK I CAN HANDLE IT.";
+			nomessage = "NO.  you don't have what i want for the  I THINK I CAN HANDLE IT.!";
+			giveitem = 134;
+			nextpage = 6;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC06";
+		dialog = "TAKE THIS MONEY AND VISIT IRALE WHO SUPPLIES OUR WEAPONS. THEN, THIS KEY WILL GET YOU IN TO SEE THE GOVERNOR. HE'S A CORRUPT PUPPET OF THE ORDER, BUT HE LOVES TO MAKE DEALS. DO WHATEVER YOU NEED TO FREE OUR BROTHERS IN ARMS.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "I'LL SEE TO IT.";
+			nomessage = "NO.  you don't have what i want for the  I'LL SEE TO IT.!";
+			log = "LOG1006";
+			giveitem = 172;
+			nextpage = 7;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MLTBL";
+		dialog = "FIGHT FOR THE FRONT AND FREEDOM. MOVE OUT.";
+		drop = 0;
+		link = 8;
+		ifitem
+		{
+			item = 324;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC07";
+		dialog = "THE PRISONERS HAVE BEEN WELCOMED BACK, THANKS TO YOU. HERE'S SOME GOLD, GO VISIT THE MEDIC AND THE WEAPONS TRAINER AND THEN, I HAVE HIGHER GOALS FOR YOU.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "I WILL. WHAT'S NEXT?";
+			nomessage = "NO.  you don't have what i want for the  I WILL. WHAT'S NEXT?!";
+			giveitem = 309;
+			nextpage = 9;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC08";
+		dialog = "A SINGLE CRYSTAL RUNS THE POWER GRID WHICH DRIVES THE ORDER'S SHIELDS. DESTROY THAT CRYSTAL AND YOU WILL PUNCH HUGE HOLES IN THE ORDER'S DEFENSES. BLACKBIRD WILL LEAD YOU TO A SPY WHO HAS A WAY IN, GOOD LUCK.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "WE'LL GET IT.";
+			nomessage = "NO.  you don't have what i want for the  WE'LL GET IT.!";
+			log = "LOG1011";
+			giveitem = 135;
+			nextpage = 10;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MLTBL";
+		dialog = "FIGHT FOR THE FRONT AND FREEDOM. MOVE OUT.";
+		drop = 0;
+		link = 11;
+		ifitem
+		{
+			item = 327;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC09";
+		dialog = "YOU'VE EXCEEDED ALL OF OUR EXPECTATIONS. BECAUSE OF YOUR DARING OUR TROOPS ARE ON THE MOVE. I WANT YOU TWO TO JOIN THE ASSAULT, WITH A SPECIFIC TARGET. TAKE OUT THE PROGRAMMER. IT'S TIME TO REVEAL WHAT WE'VE FOUND OUT ABOUT THIS LAYER OF THE ORDER.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "TELL ME WHAT WE KNOW.";
+			nomessage = "NO.  you don't have what i want for the  TELL ME WHAT WE KNOW.!";
+			log = "LOG1017";
+			giveitem = 343;
+			nextpage = 12;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MAC14";
+		dialog = "THE PROGRAMMER'S LAIR IS IN THE CASTLE. NOW, SEE THE MEDIC, GRAB SOME AMMO AND GO GET HIM.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "LET ME AT 'EM!";
+			nomessage = "NO.  you don't have what i want for the  LET ME AT 'EM!!";
+			giveitem = 309;
+			nextpage = 13;
+			closedialog = false;
+		}
+	}
+	page
+	{
+		name = "MACIL";
+		panel = "M_LEDR0";
+		voice = "MLTBL";
+		dialog = "FIGHT FOR THE FRONT AND FREEDOM. MOVE OUT.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 44;
+	page
+	{
+		dialog = "REMEMBER WHAT THE TOWN HALL LOOKED LIKE? THAT'S A GENTLE REMINDER OF WHAT THEY'RE WILLING TO DO TO GET AT US. BE CAREFUL.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 45;
+	page
+	{
+		dialog = "TALK TO MACIL. HE'LL BE ABLE TO HELP YOU.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 46;
+	page
+	{
+		dialog = "I'VE HEARD THAT MACIL'S GOT A PLAN TO SUBVERT THE ORDER. IT HAD BETTER BE GOOD. ONE MORE FAILURE AND WE'RE ALL JUST DEAD MEAT.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 47;
+	page
+	{
+		dialog = "A FEW OF THESE BARRELS DUMPED INTO THEIR WATER SUPPLY SHOULD EVEN THE ODDS A LITTLE.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 48;
+	page
+	{
+		dialog = "SO YOU'RE THE NEW OPERATIVE?  THANKS, WITHOUT YOU, WE'D ALL BE DEAD RIGHT NOW.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 5;
+	page
+	{
+		name = "GERARD";
+		dialog = "I'M WORKING ON SOMETHING THAT WILL GIVE US AN EDGE.  IT WILL INCREASE YOUR STAMINA AND COMPLETELY JACK YOU UP.  I'VE ALMOST GOT ALL THE BUGS WORKED OUT.  CAN I DO SOMETHING FOR YOU?";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "PATCH ME UP.";
+			yesmessage = "BOY, YOU'RE A REAL MESS.  I'LL SEE WHAT I CAN DO.";
+			nomessage = "YOU'RE O.K. FOR NOW.";
+			giveitem = 299;
+		}
+		choice
+		{
+			text = "STAMINA IMPLANT?";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			cost
+			{
+				item = 309;
+				amount = 1;
+			}
+			displaycost = false;
+			yesmessage = "ALL RIGHT, THIS WON'T TAKE BUT A MOMENT.";
+			nomessage = "IT'S NOT DONE YET.";
+			giveitem = 306;
+			nextpage = 2;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "GERARD";
+		dialog = "HEY, I'M WORKING ON AN UPDATED    VERSION OF YOUR IMPLANT.  IS THERE    ANYTHING ELSE I CAN DO?";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "PATCH ME UP.";
+			yesmessage = "WELL AT LEAST YOUR SEEING ACTION.";
+			nomessage = "YOU'RE FINE, YOU BABY.";
+			giveitem = 299;
+		}
+		choice
+		{
+			text = "IMPLANT UPGRADE?";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			cost
+			{
+				item = 309;
+				amount = 1;
+			}
+			displaycost = false;
+			yesmessage = "GOOD THING, NEVER CAN BE TOO SAFE.";
+			nomessage = "I'M ALMOST FINISHED, BUT NOT QUITE.";
+			giveitem = 306;
+			nextpage = 3;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "GERARD";
+		dialog = "ALL RIGHT,  I'VE ALMOST GOT EVERYTHING WORKING PERFECTLY.  THERE WERE A FEW PROBLEMS LEFT TO GET RID OF. DO YOU NEED ANYTHING ELSE?  ";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "PATCH ME UP.";
+			yesmessage = "WHAT HAVE YOU BEEN TRYING TO DO?  GO HEAD TO HEAD WITH A CRUSADER?";
+			nomessage = "YOU'RE O.K. FOR NOW.";
+			giveitem = 299;
+		}
+		choice
+		{
+			text = "IMPLANT UPGRADE?.";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			cost
+			{
+				item = 309;
+				amount = 1;
+			}
+			displaycost = false;
+			yesmessage = "THAT SHOULD DO IT FOR YOU.";
+			nomessage = "LET ME RUN SOME MORE TESTS FIRST.";
+			giveitem = 306;
+			nextpage = 4;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "GERARD";
+		dialog = "THAT'S ALL I CAN DO ON THE IMPLANT RIGHT NOW.  MAYBE SOME HEALING?";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "YEAH.";
+			yesmessage = "BOY, YOU'RE A REAL MESS.  I'LL SEE WHAT I CAN DO.";
+			nomessage = "YOU'RE O.K. FOR NOW.";
+			giveitem = 299;
+		}
+	}
+}
+
+conversation
+{
+	actor = 2;
+	page
+	{
+		name = "FERIS";
+		dialog = "WHAT CAN I DO FOR YOU?";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "I'M OUT OF BULLETS.";
+			yesmessage = "HERE'S SOME AMMO FOR YOU.  DON'T WASTE IT.";
+			nomessage = "YOU'VE GOT ENOUGH FOR NOW.";
+			giveitem = 298;
+		}
+		choice
+		{
+			text = "TEACH ME.";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			cost
+			{
+				item = 310;
+				amount = 1;
+			}
+			displaycost = false;
+			yesmessage = "ALL RIGHT, I'LL JUST SHOW YOU A FEW LITTLE POINTERS.";
+			nomessage = "YOU'RE NOT READY YET.";
+			giveitem = 307;
+			nextpage = 2;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "FERIS";
+		dialog = "BACK AGAIN?  WHAT DO YOU NEED?";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "I'M OUT OF BULLETS.";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			displaycost = false;
+			yesmessage = "HERE'S SOME AMMO FOR YOU.  DON'T WASTE IT.";
+			nomessage = "YOU'VE GOT ENOUGH AMMO.";
+			giveitem = 298;
+		}
+		choice
+		{
+			text = "TEACH ME.";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			cost
+			{
+				item = 310;
+				amount = 1;
+			}
+			displaycost = false;
+			yesmessage = "ALL RIGHT, THIS SHOULD KEEP YOU GOING FOR A WHILE.";
+			nomessage = "SORRY, CAN'T.  I'M JUST FOLLOWING MACIL'S ORDERS.";
+			giveitem = 307;
+			nextpage = 3;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "FERIS";
+		dialog = "WELL WHICH IS IT, BULLETS OR TRAINING?  I CAN'T WAIT TO GET MY HANDS ON THOSE NEW WEAPONS WE CAPTURED.  A LITTLE BIT OF TRAINING AND THEN A LOT OF REVENGE.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "I'M OUT OF AMMO.";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			displaycost = false;
+			yesmessage = "HERE'S SOME AMMO FOR YOU.  DON'T WASTE IT.";
+			nomessage = "YOU'VE GOT ENOUGH AMMO.";
+			giveitem = 298;
+		}
+		choice
+		{
+			text = "TEACH ME.";
+			cost
+			{
+				item = 168;
+				amount = 0;
+			}
+			cost
+			{
+				item = 310;
+				amount = 1;
+			}
+			displaycost = false;
+			yesmessage = "O.K.  TAKE WHAT YOU'VE LEARNED HERE AND SHOW THOSE ORDER CLODS THE WAY TO HELL.";
+			nomessage = "COME BACK LATER, WHEN MACIL SAYS IT'S TIME.";
+			giveitem = 307;
+			nextpage = 4;
+			closedialog = true;
+		}
+	}
+	page
+	{
+		name = "FERIS";
+		dialog = "I'VE TAUGHT YOU EVERYTHING I CAN RIGHT NOW.  GIVE ME SOME TIME TO PUT THE NEW WEAPONS THROUGH THEIR PACES. THAT IS UNLESS YOU'RE OUT OF BULLETS.";
+		drop = 0;
+		link = 0;
+		choice
+		{
+			text = "YES I AM.";
+			yesmessage = "HERE YOU GO.";
+			nomessage = "YOU'VE GOT ENOUGH AMMO FOR NOW.";
+			giveitem = 298;
+		}
+	}
+}
+
+conversation
+{
+	actor = 12;
+	page
+	{
+		name = "ADVISOR";
+		dialog = "DON'T GET TRIGGER HAPPY IN THE TOWN. YOU'LL SET OFF THE ALARM AND THEY'LL START SENDING IN GUARDS FROM THE CASTLE.   ";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 13;
+	page
+	{
+		name = "MACIL'S ADVISOR";
+		dialog = "WELCOME, WE CAN ALWAYS USE MORE HELP.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 14;
+	page
+	{
+		name = "ADVISOR";
+		dialog = "WHEN I WAS STILL IN ACTION WE HAD THE CHANCE TO EXAMINE AN ACOLYTE BEFORE THE REINFORCEMENTS ARRIVED. LISTEN, THEY'RE NOT HUMAN.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 15;
+	page
+	{
+		dialog = "WE'RE TRYING TO FIND WHERE THE CASTLE GATE MECHANISMS ARE, BUT SO FAR WE'VE HAD NO LUCK.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 16;
+	page
+	{
+		dialog = "DON'T GET CAUGHT. I'VE HEARD HORROR STORIES ABOUT WHAT THEY DO TO OUR PEOPLE AFTER THEY'RE IMPRISONED. THEY JUST DISAPPEAR... WITHOUT A TRACE.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 17;
+	page
+	{
+		dialog = "HERE'S SOME ADVICE, IF YOU EVER SEE ANY OF THE ORDER'S \"TIN SOLDIERS\" GO IN THE OTHER DIRECTION. THEY'RE FAST AND BRUTAL.";
+		drop = 0;
+		link = 0;
+	}
+}
+
+conversation
+{
+	actor = 18;
+	page
+	{
+		dialog = "LEAVE ME BE. I'M DOING SOMETHING FOR MACIL.";
+		drop = 0;
+		link = 0;
+	}
+}
