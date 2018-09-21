@@ -1,0 +1,1 @@
+IWAD = "STRIFE1.WAD"
