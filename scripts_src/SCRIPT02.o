@@ -7,12 +7,17 @@ conversation
 	page
 	{
 		name = "ULAINE";
-		dialog = "I'LL HELP YOU IF YOU HELP ME.   FIVE PIECES OF GOLD AND I'LL TELL ALL I KNOW.";
+		dialog = "Je t'aiderai si tu m'aides. 5 pieces d'or et je te dis ce que je sais.";
 		drop = 169;
 		link = 0;
 		choice
 		{
-			text = "HERE'S THE GOLD.";
+			text = "Voici l'or.";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -23,9 +28,8 @@ conversation
 				item = 168;
 				amount = 5;
 			}
-			displaycost = false;
-			yesmessage = "BE STEALTHY WHEN YOU KILL, YOU WON'T SET OFF ALARMS.";
-			nomessage = "WELL, I WON'T BE TELLING YOU ANYTHING FOR FREE!";
+			yesmessage = "Tue en silence pour ne pas declencher d'alarme.";
+			nomessage = "Je ne te dirai rien gratuitement !";
 			nextpage = 2;
 			closedialog = true;
 		}
@@ -33,12 +37,17 @@ conversation
 	page
 	{
 		name = "ULAINE";
-		dialog = "HAVE YOU BY ANY CHANCE GOT ANOTHER 5 GOLD ON YOU?";
+		dialog = "Aurais-tu par chance 5 pieces de plus sur toi ?";
 		drop = 169;
 		link = 0;
 		choice
 		{
-			text = "5 GOLD.";
+			text = "5 pieces.";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -49,9 +58,8 @@ conversation
 				item = 168;
 				amount = 5;
 			}
-			displaycost = false;
-			yesmessage = "WELL, POISON BOLTS CAN KILL THE GUARDS INSTANTLY AND WON'T SET OFF THE ALARMS.";
-			nomessage = "NO SIR, I WON'T BE TELLING YOU ANYTHING FOR FREE!";
+			yesmessage = "Les carreaux empoisonnes tuent les gardes sans declencher d'alarme";
+			nomessage = "Non m'sieur, je ne te dirai rien gratuitement !";
 			nextpage = 3;
 			closedialog = true;
 		}
@@ -59,7 +67,7 @@ conversation
 	page
 	{
 		name = "ULAINE";
-		dialog = "YOU'VE WRUNG THE LAST BIT OF GOSSIP OUT OF ME ALREADY!";
+		dialog = "Je t'ai deja dit tout ce que je sais !";
 		drop = 169;
 		link = 0;
 	}
@@ -71,7 +79,7 @@ conversation
 	page
 	{
 		name = "IRALE";
-		dialog = "WHAT CAN I GET FOR YOU?";
+		dialog = "Que puis-je pour vous ?";
 		drop = 179;
 		link = 2;
 		ifitem
@@ -80,46 +88,43 @@ conversation
 		}
 		choice
 		{
-			text = "ASSAULT GUN";
+			text = "Un fusil d'assaut";
 			cost
 			{
 				item = 168;
 				amount = 250;
 			}
 			displaycost = true;
-			yesmessage = "HERE YOU GO.";
-			nomessage = "YOU CAN'T AFFORD THAT RIGHT NOW.";
-			giveitem = 188;
+			yesmessage = "Et voila.";
+			nomessage = "Vous ne pouvez pas acheter ca maintenant.";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "CLIP OF BULLETS";
+			text = "Un chargeur";
 			cost
 			{
 				item = 168;
 				amount = 10;
 			}
 			displaycost = true;
-			yesmessage = "THANKS.";
-			nomessage = "COME ON, 10 GOLD.";
-			giveitem = 179;
+			yesmessage = "Merci.";
+			nomessage = "Allez, 10 pieces";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "AMMO BOX";
+			text = "Une boite de munitions";
 			cost
 			{
 				item = 168;
 				amount = 30;
 			}
 			displaycost = true;
-			yesmessage = "HERE'S YOUR AMMO.";
-			nomessage = "MAYBE SOME OTHER TIME.";
-			giveitem = 180;
+			yesmessage = "Voila vos munitions.";
+			nomessage = "Peut-etre une autre fois.";
 			nextpage = 1;
 			closedialog = false;
 		}
@@ -127,15 +132,14 @@ conversation
 	page
 	{
 		name = "IRALE";
-		dialog = "GOOD NEWS FROM THE FRONT FOR A CHANGE.  MACIL SENT YOU FOR A REWARD AND TRAINING. HE'S INSTRUCTED ME TO GIVE THEM TO YOU.";
+		dialog = "De bonnes nouvelles du Front pour changer. Macil vous envoie une recompense et un entrainement. Il m'a demande de vous les fournir.";
 		drop = 179;
 		link = 0;
 		choice
 		{
-			text = "THANKS.";
-			yesmessage = "GLAD TO BE OF SERVICE.";
-			nomessage = "NO.  you don't have what i want for the  THANKS.!";
-			giveitem = 172;
+			text = "Merci.";
+			yesmessage = "Content de rendre service.";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			nextpage = 3;
 			closedialog = false;
 		}
@@ -143,21 +147,25 @@ conversation
 	page
 	{
 		name = "IRALE";
-		dialog = "ALL RIGHT, HERE'S A FEW POINTERS ON WHAT TO DO: DON'T GET IN THE WAY OF CRUSADERS: FIRING SHORT BURSTS FROM YOUR ASSAULT GUN KEEPS IT ON TARGET.";
+		dialog = "Bien, voici quelques trucs en passant: Ne vous mettez pas en travers des Crusaders: Tirer de courtes raffales avec le fusil d'assaut permet de rester precis.";
 		drop = 179;
 		link = 0;
 		choice
 		{
-			text = "IS THAT IT?";
+			text = "C'est tout ?";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
 				amount = 0;
 			}
-			displaycost = false;
-			yesmessage = "LOOK, YOU'LL LEARN MORE LATER.";
-			nomessage = "NO.  you don't have what i want for the  IS THAT IT?!";
-			giveitem = 307;
+			yesmessage = "Vous en apprendez plus plus tard.";
+			nomessage = "NO.  you don't have what i want for the  C'est tout ?!";
+			giveitem = 858993459;
 			nextpage = 4;
 			closedialog = false;
 		}
@@ -165,12 +173,17 @@ conversation
 	page
 	{
 		name = "IRALE";
-		dialog = "I THINK I CAN CONVERT A FLAMETHROWER FROM ONE OF THE CRUSADERS FOR USE BY A HUMAN. OH, ANYTHING ELSE I CAN GET YOU?";
+		dialog = "Je crois que je peux vous convertir un lance-flammes de Crusader pour le rendre utilisable par les humains. Oh, que puis-je d'autre pour vous ?";
 		drop = 179;
 		link = 0;
 		choice
 		{
-			text = "FLAMETHROWER.";
+			text = "Un lance-flammes.";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -181,55 +194,50 @@ conversation
 				item = 191;
 				amount = 1;
 			}
-			displaycost = false;
-			yesmessage = "I KNEW THAT'D WORK! HERE YOU GO, TAKE HER FOR A SPIN!";
-			nomessage = "LISTEN, I CAN'T MAKE ANYTHING WITHOUT THE RIGHT PARTS!";
-			giveitem = 190;
+			yesmessage = "Je savais que ca marcherait ! Tenez, amusez-vous bien !";
+			nomessage = "Ecoutez, je ne peux rien faire sans les bonnes pieces !";
 			nextpage = 5;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "ASSAULT GUN";
+			text = "Un fusil d'assaut";
 			cost
 			{
 				item = 168;
 				amount = 250;
 			}
 			displaycost = true;
-			yesmessage = "WELL, HERE YOU GO SIR!";
-			nomessage = "OBVIOUSLY, YOU CAN'T AFFORD THAT RIGHT NOW.";
-			giveitem = 188;
+			yesmessage = "Et voila.";
+			nomessage = "Vous ne pouvez pas acheter ca maintenant.";
 			nextpage = 4;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "CLIP OF BULLETS";
+			text = "Un chargeur";
 			cost
 			{
 				item = 168;
 				amount = 10;
 			}
 			displaycost = true;
-			yesmessage = "THANKS.";
-			nomessage = "COME ON, 10 GOLD.";
-			giveitem = 179;
+			yesmessage = "Merci.";
+			nomessage = "Allez, 10 pieces";
 			nextpage = 4;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "AMMO BOX";
+			text = "Une boite de munitions";
 			cost
 			{
 				item = 168;
 				amount = 30;
 			}
 			displaycost = true;
-			yesmessage = "HERE'S YOUR AMMO.";
-			nomessage = "MAYBE SOME OTHER TIME. GOODBYE!";
-			giveitem = 180;
+			yesmessage = "Voila vos munitions.";
+			nomessage = "Peut-etre une autre fois.";
 			nextpage = 4;
 			closedialog = false;
 		}
@@ -237,7 +245,7 @@ conversation
 	page
 	{
 		name = "IRALE";
-		dialog = "NOW THAT YOU HAVE THE FLAMETHROWER, IS THERE ANYTHING ELSE I CAN GET YOU?";
+		dialog = "A present que vous avez votre lance-flammes, que puis-je faire d'autre pour vous ?";
 		drop = 179;
 		link = 6;
 		ifitem
@@ -246,46 +254,43 @@ conversation
 		}
 		choice
 		{
-			text = "ASSAULT GUN";
+			text = "Un fusil d'assaut";
 			cost
 			{
 				item = 168;
 				amount = 250;
 			}
 			displaycost = true;
-			yesmessage = "HERE YOU GO.";
-			nomessage = "YOU CAN'T AFFORD THAT RIGHT NOW.";
-			giveitem = 188;
+			yesmessage = "Et voila.";
+			nomessage = "Vous ne pouvez pas acheter ca maintenant.";
 			nextpage = 5;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "CLIP OF BULLETS";
+			text = "Un chargeur";
 			cost
 			{
 				item = 168;
 				amount = 10;
 			}
 			displaycost = true;
-			yesmessage = "THANKS.";
-			nomessage = "COME ON, 10 GOLD.";
-			giveitem = 179;
+			yesmessage = "Merci.";
+			nomessage = "Allez, 10 pieces";
 			nextpage = 5;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "AMMO BOX";
+			text = "Une boite de munitions";
 			cost
 			{
 				item = 168;
 				amount = 30;
 			}
 			displaycost = true;
-			yesmessage = "HERE'S YOUR AMMO.";
-			nomessage = "MAYBE SOME OTHER TIME.";
-			giveitem = 180;
+			yesmessage = "Voila vos munitions.";
+			nomessage = "Peut-etre une autre fois.";
 			nextpage = 5;
 			closedialog = false;
 		}
@@ -293,66 +298,62 @@ conversation
 	page
 	{
 		name = "IRALE";
-		dialog = "NOW THAT YOU HAVE THE FLAMETHROWER, IS THERE ANYTHING ELSE I CAN GET YOU?";
+		dialog = "A present que vous avez votre lance-flammes, que puis-je faire d'autre pour vous ?";
 		drop = 179;
 		link = 0;
 		choice
 		{
-			text = "CLIP OF BULLETS";
+			text = "Un chargeur";
 			cost
 			{
 				item = 168;
 				amount = 10;
 			}
 			displaycost = true;
-			yesmessage = "THANKS.";
-			nomessage = "COME ON, 10 GOLD.";
-			giveitem = 179;
+			yesmessage = "Merci.";
+			nomessage = "Allez, 10 pieces";
 			nextpage = 6;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "AMMO BOX";
+			text = "Une boite de munitions";
 			cost
 			{
 				item = 168;
 				amount = 30;
 			}
 			displaycost = true;
-			yesmessage = "HERE'S YOUR AMMO.";
-			nomessage = "MAYBE SOME OTHER TIME.";
-			giveitem = 180;
+			yesmessage = "Voila vos munitions.";
+			nomessage = "Peut-etre une autre fois.";
 			nextpage = 6;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "PHOSPHOR GRENADES";
+			text = "Des Grenades Incendiaires";
 			cost
 			{
 				item = 168;
 				amount = 75;
 			}
 			displaycost = true;
-			yesmessage = "THANKS.";
-			nomessage = "YOU DON'T HAVE ENOUGH";
-			giveitem = 178;
+			yesmessage = "Merci.";
+			nomessage = "Vous n'avez pas assez.";
 			nextpage = 6;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "POISON BOLTS";
+			text = "des carreaux empoisonnes";
 			cost
 			{
 				item = 168;
 				amount = 200;
 			}
 			displaycost = true;
-			yesmessage = "WORTH EVERY GOLD!";
-			nomessage = "COME ON, 200 GOLD!";
-			giveitem = 185;
+			yesmessage = "Ca vaut de l'or !";
+			nomessage = "Allez, 200 pieces !";
 			nextpage = 6;
 			closedialog = false;
 		}
@@ -364,14 +365,14 @@ conversation
 	actor = 21;
 	page
 	{
-		dialog = "I CAN'T BELIEVE THAT I GOT STUCK WITH THIS DUTY. THEY SAY THAT SOMETHING EVIL CAME UP OUT OF THIS SEWER GATE... NOW I GET TO STAND HERE UNTIL IT COMES UP AGAIN!";
+		dialog = "J'arrive pas a croire que je suis coince ici a faire le planton. Ils disent qu'une chose malefique est sortie de l'egout... Maintenant, il faut que je reste jusqu'a ce qu'elle sorte !";
 		drop = 168;
 		link = 0;
 		choice
 		{
-			text = "WHAT GATE?";
-			yesmessage = "THE SEWER OVERFLOW GATE.";
-			nomessage = "NO.  you don't have what i want for the  WHAT GATE?!";
+			text = "L'egout ?";
+			yesmessage = "La porte du tout-a-l'egout.";
+			nomessage = "NO.  you don't have what i want for the  L'egout ?!";
 		}
 	}
 }
@@ -382,36 +383,34 @@ conversation
 	page
 	{
 		name = "BOWYER";
-		dialog = "HELLO FRIEND. WHAT CAN I GET FOR YOU?";
+		dialog = "Bonjour l'ami. Que puis-je pour vous ?";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "ELECTRIC BOLTS";
+			text = "Des carreaux electriques";
 			cost
 			{
 				item = 168;
 				amount = 5;
 			}
 			displaycost = true;
-			yesmessage = "you got the ELECTRIC BOLTS.";
-			nomessage = "NO.  you don't have what i want for the  ELECTRIC BOLTS!";
-			giveitem = 186;
+			yesmessage = "Vous avez pris les carreaux electriques.";
+			nomessage = "NO.  you don't have what i want for the  Des carreaux electriques !";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "AMMO SATCHEL";
+			text = "Un sac de munitions";
 			cost
 			{
 				item = 168;
 				amount = 300;
 			}
 			displaycost = true;
-			yesmessage = "THANK YOU. ANYTHING ELSE?";
-			nomessage = "YOU CAN'T AFFORD THAT, GOOD DAY.";
-			giveitem = 187;
+			yesmessage = "Merci. Autre chose ?";
+			nomessage = "Vous ne pouvez pas vous acheter ceci. Bonne journee.";
 			nextpage = 2;
 			closedialog = false;
 		}
@@ -419,36 +418,34 @@ conversation
 	page
 	{
 		name = "BOWYER";
-		dialog = "WHAT CAN I GET FOR YOU?";
+		dialog = "Que puis-je pour vous ?";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "ELECTRIC BOLTS";
+			text = "Des carreaux electriques !";
 			cost
 			{
 				item = 168;
 				amount = 5;
 			}
 			displaycost = true;
-			yesmessage = "you got the ELECTRIC BOLTS.";
-			nomessage = "NO.  you don't have what i want for the  ELECTRIC BOLTS!";
-			giveitem = 186;
+			yesmessage = "Vous avez pris les carreaux electriques.";
+			nomessage = "NO.  you don't have what i want for the  Des carreaux electriques !";
 			nextpage = 2;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "AMMO SATCHEL";
+			text = "Un sac de munitions";
 			cost
 			{
 				item = 168;
 				amount = 125;
 			}
 			displaycost = true;
-			yesmessage = "THANK YOU, ANYTHING ELSE?";
-			nomessage = "YOU CAN'T AFFORD THAT, GOOD DAY TO YOU!";
-			giveitem = 187;
+			yesmessage = "Merci. Autre chose ?";
+			nomessage = "Vous ne pouvez pas vous acheter ceci. Bonne journee.";
 			nextpage = 2;
 			closedialog = false;
 		}
@@ -460,8 +457,8 @@ conversation
 	actor = 4;
 	page
 	{
-		name = "ARMORER";
-		dialog = "WELCOME. WHAT MAY I SHOW YOU?";
+		name = "ARMURIER";
+		dialog = "Bienvenue. Que vous faut-il ?";
 		drop = 0;
 		link = 2;
 		ifitem
@@ -470,98 +467,92 @@ conversation
 		}
 		choice
 		{
-			text = "ENVIRONMENTAL SUIT";
+			text = "Une combinaison hazmat";
 			cost
 			{
 				item = 168;
 				amount = 25;
 			}
 			displaycost = true;
-			yesmessage = "WELL, HERE YOU ARE.";
-			nomessage = "I'M SORRY BUT YOU DON'T HAVE ENOUGH MONEY FOR THAT.";
-			giveitem = 161;
+			yesmessage = "Et voici.";
+			nomessage = "Desole mais vous n'avez pas assez d'argent pour ca.";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "LEATHER ARMOR";
+			text = "Une armure de cuir";
 			cost
 			{
 				item = 168;
 				amount = 50;
 			}
 			displaycost = true;
-			yesmessage = "HERE YOU ARE.";
-			nomessage = "PERHAPS SOME OTHER TIME?";
-			giveitem = 130;
+			yesmessage = "Et voila.";
+			nomessage = "Peut-etre une autre fois ?";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "METAL ARMOR";
+			text = "Une armure en metal";
 			cost
 			{
 				item = 168;
 				amount = 200;
 			}
 			displaycost = true;
-			yesmessage = "WEAR IT IN GOOD HEALTH.";
-			nomessage = "COME BACK WHEN YOU CAN AFFORD TO BUY SOMETHING YOU LOUT!";
-			giveitem = 129;
+			yesmessage = "Portez-la en bonne sante.";
+			nomessage = "Revenez quand vous pourrez vous l'acheter, creve-la-dalle !";
 			nextpage = 1;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "ARMORER";
-		dialog = "WELCOME. WHAT MAY I SHOW YOU?";
+		name = "ARMURIER";
+		dialog = "Bienvenue. Que vous faut-il ?";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "ENVIRONMENTAL SUIT";
+			text = "Une combinaison hazmat";
 			cost
 			{
 				item = 168;
 				amount = 25;
 			}
 			displaycost = true;
-			yesmessage = "WELL, HERE YOU ARE.";
-			nomessage = "I'M SORRY BUT YOU DON'T HAVE ENOUGH MONEY FOR THAT.";
-			giveitem = 161;
+			yesmessage = "Et voici.";
+			nomessage = "Desole mais vous n'avez pas assez d'argent pour ca.";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "LEATHER ARMOR";
+			text = "Une armure de cuir";
 			cost
 			{
 				item = 168;
 				amount = 50;
 			}
 			displaycost = true;
-			yesmessage = "HERE YOU ARE.";
-			nomessage = "PERHAPS SOME OTHER TIME?";
-			giveitem = 130;
+			yesmessage = "Et voila.";
+			nomessage = "Peut-etre une autre fois ?";
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "METAL ARMOR";
+			text = "Une armure en metal";
 			cost
 			{
 				item = 168;
 				amount = 125;
 			}
 			displaycost = true;
-			yesmessage = "WEAR IT IN GOOD HEALTH.";
-			nomessage = "COME BACK WHEN YOU CAN AFFORD TO BUY SOMETHING YOU LOUT!";
-			giveitem = 129;
+			yesmessage = "Portez-la en bonne sante.";
+			nomessage = "Revenez quand vous pourrez vous l'acheter, creve-la-dalle !";
 			nextpage = 1;
 			closedialog = false;
 		}
@@ -573,8 +564,8 @@ conversation
 	actor = 5;
 	page
 	{
-		name = "MEDIC";
-		dialog = "HOW MAY I ASSIST YOU?";
+		name = "MEDECIN";
+		dialog = "Qu'avez-vous ?";
 		drop = 0;
 		link = 2;
 		ifitem
@@ -583,114 +574,114 @@ conversation
 		}
 		choice
 		{
-			text = "MED PATCH";
+			text = "Un pansement";
 			cost
 			{
 				item = 168;
 				amount = 10;
 			}
 			displaycost = true;
-			yesmessage = "HERE'S YOUR PATCH.";
-			nomessage = "YOU NEED 10 GOLD FOR THAT.";
-			giveitem = 125;
+			yesmessage = "Voila votre pansement.";
+			nomessage = "Il vous faut 10 pieces d'or pour ca.";
+			giveitem = 2105376125;
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "MEDICAL KIT";
+			text = "Un kit medical";
 			cost
 			{
 				item = 168;
 				amount = 25;
 			}
 			displaycost = true;
-			yesmessage = "THANK YOU.";
-			nomessage = "I WISH I COULD GIVE THEM AWAY, BUT THEY COST 25 GOLD.";
-			giveitem = 126;
+			yesmessage = "Merci.";
+			nomessage = "Je vous le donnerais bien, mais ca vaut 25 pieces.";
+			giveitem = 2122219134;
 			nextpage = 1;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "FIELD SURGERY KIT";
+			text = "Un kit de chirurgie";
 			cost
 			{
 				item = 168;
 				amount = 75;
 			}
 			displaycost = true;
-			yesmessage = "THERE YOU GO.  TAKE CARE NOW.";
-			nomessage = "WELL, MAYBE YOU CAN AFFORD SOME MED PATCHES?";
-			giveitem = 127;
+			yesmessage = "Voila.  Prenez soin de vous.";
+			nomessage = "Eh bien, peut-etre que des pansements pourraient vous suffire ?";
+			giveitem = 2139062143;
 			nextpage = 1;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "MEDIC";
-		dialog = "I HOPE MACIL KNOWS WHAT HE'S DOING. IF THE ORDER FINDS OUT I'M HELPING THE FRONT I'M AS GOOD AS DEAD... NOT THAT THIS MATTERS TO YOU ANY. THE FRONT'S MEDIC GAVE ME AN UPGRADE CHIP FOR YOU, ARE YOU READY? ";
+		name = "MEDECIN";
+		dialog = "J'espere que Macil sait ce qu'il fait. Si l'Ordre decouvre que j'ai aide le Front, je suis mort... Mais ne vous en faites pas. Le medecin du Front m'a donne une puce de mise a jour pour vous. Vous etes pret ? ";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "YES, I'M READY.";
-			yesmessage = "WELL THEN, THIS WON'T TAKE BUT A SECOND. THERE, DONE ALREADY.";
-			nomessage = "NO.  you don't have what i want for the  YES, I'M READY.!";
-			giveitem = 306;
+			text = "Je suis pret.";
+			yesmessage = "Ca ne prendra qu'une seconde. Voila c'est fait.";
+			nomessage = "NO.  you don't have what i want for the  Je suis pret.!";
+			giveitem = 842150450;
 			nextpage = 3;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "MEDIC";
-		dialog = "HOW MAY I ASSIST YOU?";
+		name = "MEDECIN";
+		dialog = "Qu'avez-vous ?";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "MED PATCH";
+			text = "Un pansement";
 			cost
 			{
 				item = 168;
 				amount = 10;
 			}
 			displaycost = true;
-			yesmessage = "HERE'S YOUR PATCH.";
-			nomessage = "YOU NEED 10 GOLD FOR THAT.";
-			giveitem = 125;
+			yesmessage = "Voila votre pansement.";
+			nomessage = "Il vous faut 10 pieces d'or pour ca.";
+			giveitem = 2105376125;
 			nextpage = 3;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "MEDICAL KIT";
+			text = "Un kit medical";
 			cost
 			{
 				item = 168;
 				amount = 25;
 			}
 			displaycost = true;
-			yesmessage = "THANK YOU.";
-			nomessage = "I WISH I COULD GIVE THEM AWAY, BUT THEY COST 25 GOLD.";
-			giveitem = 126;
+			yesmessage = "Merci.";
+			nomessage = "Je vous le donnerais bien, mais ca vaut 25 pieces.";
+			giveitem = 2122219134;
 			nextpage = 3;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "FIELD SURGERY KIT";
+			text = "Un kit de chirurgie";
 			cost
 			{
 				item = 168;
 				amount = 75;
 			}
 			displaycost = true;
-			yesmessage = "THERE YOU GO.  TAKE CARE NOW.";
-			nomessage = "WELL, MAYBE YOU CAN AFFORD SOME MED PATCHES?";
-			giveitem = 127;
+			yesmessage = "Voila.  Prenez soin de vous.";
+			nomessage = "Eh bien, peut-etre que des pansements pourraient vous suffire ?";
+			giveitem = 2139062143;
 			nextpage = 3;
 			closedialog = false;
 		}
@@ -702,65 +693,65 @@ conversation
 	actor = 3;
 	page
 	{
-		name = "BARKEEP";
-		dialog = "HELLO STRANGER, I HAVEN'T SEEN YOU AROUND HERE BEFORE. LET ME GIVE YOU A PIECE OF FREE ADVICE. I'D BE CAREFUL IF I WERE YOU. THE ORDER DOES NOT TOLERATE FREE WILL, AND THEIR JUSTICE IS SWIFT.";
+		name = "BARMAN";
+		dialog = "Salut, etranger. C'est la premiere fois que je vous vois dans le coin. Laissez-moi vous donner un conseil. Je serais prudent si j'etais vous. L'Ordre ne tolere pas la liberte totale. Et leur justice est rapide.";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "WHAT'S THE WORD?";
-			yesmessage = "THE WORD IS... THE SEWERS HOLD MORE THAN JUST RATS AND ROBOTS.";
-			nomessage = "HEY A MAN'S GOT TO MAKE A LIVING. YOU THINK THESE JOKERS  HERE TIP WELL? MUSTHA";
+			text = "C'est quoi le mot ?";
+			yesmessage = "Le mot est... Les egouts contiennent plus que des rats et des robots.";
+			nomessage = "Hey, il faut bien vivre. Vous pensez que ces clowns payent bien ici?";
 			nextpage = 2;
 			closedialog = true;
 		}
 	}
 	page
 	{
-		name = "BARKEEP";
-		dialog = "WHAT CAN I DO FOR YOU NOW?";
+		name = "BARMAN";
+		dialog = "Qu'est-ce que ce sera ?";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "MORE INFO.";
+			text = "Plus d'infos.";
 			cost
 			{
 				item = 168;
 				amount = 5;
 			}
 			displaycost = true;
-			yesmessage = "THE GOVERNOR IS A SIMPLE REMINDER TO US THAT WE AREN'T FREE PEOPLE ANYMORE.";
-			nomessage = "COME BACK WHEN YOU GET SOME GOLD.";
+			yesmessage = "Le gouverneur est la pour nous rappeler qu'on n'est plus un peuple libre.";
+			nomessage = "Revenez quand vous aurez du fric.";
 			nextpage = 3;
 			closedialog = true;
 		}
 	}
 	page
 	{
-		name = "BARKEEP";
-		dialog = "WELL, YOU'RE ASKING A LOT OF QUESTIONS FOR SOMEONE WHO'S NOT TRYING TO DIE. MAKE SURE YOU DON'T GO AND GET YOURSELF KILLED, OR WORSE.";
+		name = "BARMAN";
+		dialog = "Vous posez beaucoup de questions pour quelqu'un qui n'essaie pas de mourir. Essayez de ne pas vous faire tuer, ou pire.";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "MORE INFO.";
+			text = "Plus d'infos.";
 			cost
 			{
 				item = 168;
 				amount = 5;
 			}
 			displaycost = true;
-			yesmessage = "THERE'S MORE TO THE ORDER THAN MEETS THE EYE.";
-			nomessage = "WE'LL TALK WHEN YOU GET GOLD!";
+			yesmessage = "L'Ordre cache beaucoup plus que ce qu'ils ne veulent montrer.";
+			nomessage = "On reparlera quand vous aurez de l'argent !";
 			nextpage = 4;
 			closedialog = true;
 		}
 	}
 	page
 	{
-		name = "BARKEEP";
-		dialog = "THAT'S IT FRIEND, THE WELL OF KNOWLEDGE HAS RUN DRY.  I'VE TOLD YOU MORE THAN I SHOULD HAVE ANYWAY. GOOD LUCK... AND DON'T COME BACK.";
+		name = "BARMAN";
+		dialog = "Et voila l'ami, le puits de connaissances s'est asseche. Je vous en ai dit plus que ce que je ne savais. Bonne chance... Et ne revenez pas.";
 		drop = 0;
 		link = 0;
 	}
@@ -771,8 +762,8 @@ conversation
 	actor = 54;
 	page
 	{
-		name = "DOOR GUARD";
-		dialog = "HEY, I'M ONLY HERE IN CASE OF AN EMERGENCY. IF THE CORE BREACHES, THEN I MAKE SURE NO ONE GETS IN... OR OUT.";
+		name = "GARDE DE PORTE";
+		dialog = "Je ne suis ici que pour les urgences. Si le coeur se brise, je m'assure que personne n'entre... Ou ne sort.";
 		drop = 179;
 		link = 0;
 	}
@@ -783,8 +774,8 @@ conversation
 	actor = 55;
 	page
 	{
-		name = "GUARD";
-		dialog = "WATCH YOUR STEP, PEASANT!";
+		name = "GARDE";
+		dialog = "Regardes ou tu marches, paysan !";
 		drop = 179;
 		link = 0;
 	}
@@ -795,8 +786,8 @@ conversation
 	actor = 56;
 	page
 	{
-		name = "GUARD";
-		dialog = "WE'RE GOING TO KILL YOU!  ";
+		name = "GARDE";
+		dialog = "On va te tuer !";
 		drop = 179;
 		link = 0;
 	}
@@ -807,8 +798,8 @@ conversation
 	actor = 57;
 	page
 	{
-		name = "SEWER GUARD";
-		dialog = "WHO IN THE BLAZES ARE YOU? NO ONE'S SUPPOSED TO BE LOITERING ABOUT IN THIS AREA!";
+		name = "GARDE DES EGOUTS";
+		dialog = "T'es qui, toi? C'est une zone interdite ici !";
 		drop = 162;
 		link = 0;
 	}
@@ -819,8 +810,8 @@ conversation
 	actor = 58;
 	page
 	{
-		name = "GUARD";
-		dialog = "YOU THERE, NOBODY'S ALLOWED IN HERE. MOVE ALONG!";
+		name = "GARDE";
+		dialog = "Vous, là ! Personne n'est autorisé dans ce secteur ! Circulez !";
 		drop = 179;
 		link = 0;
 	}
@@ -831,8 +822,8 @@ conversation
 	actor = 44;
 	page
 	{
-		name = "FRONT GUARD";
-		dialog = "IRALE WILL SET YOU RIGHT UP!";
+		name = "GARDE DU FRONT";
+		dialog = "IRALE va te remettre en place !";
 		drop = 179;
 		link = 0;
 	}
@@ -846,21 +837,21 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA001";
-		dialog = "I'M KINDA A TALENT BROKER FOR THE REBELS. A GUY WHO'S AS GOOD AS YOU COULD MAKE A LOT OF GOLD... IF YOU HOOKED UP WITH THE RIGHT PEOPLE.";
+		dialog = "Je suis une sorte de courtier en talents pour les rebelles. Un gars aussi bon que vous pourrait se faire beaucoup d'argent... Si vous vous acoquinez aux bonnes personnes.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "I'M INTERESTED.";
-			nomessage = "NO.  you don't have what i want for the  I'M INTERESTED.!";
+			text = "Ca m'interesse.";
+			nomessage = "NO.  you don't have what i want for the  Ca m'interesse.!";
 			nextpage = 3;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "SCREW THE REBELS!";
-			nomessage = "NO.  you don't have what i want for the  SCREW THE REBELS!!";
-			giveitem = 301;
+			text = "J'emmerde les rebelles !";
+			nomessage = "NO.  you don't have what i want for the  J'emmerde les rebelles !!";
+			giveitem = 757935405;
 			nextpage = 2;
 			closedialog = false;
 		}
@@ -870,7 +861,7 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA002";
-		dialog = "NO, NO SECOND CHANCE.  OH GUARDS, KILL HIM.";
+		dialog = "Non, pas de seconde chance. Gardes, tuez-le.";
 		drop = 301;
 		link = 0;
 	}
@@ -879,14 +870,13 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA003";
-		dialog = "GOOD CHOICE. THE ORDER'S SANCTUARY BY THE RIVER IS THEIR UNOFFICIAL TORTURE CHAMBER. HIDDEN INSIDE THERE'S A GOLDEN CHALICE. YOU SWIPE IT AND REAP YOUR REWARD.";
+		dialog = "Bon choix. Le sanctuaire de l'Ordre pres de la riviere est leur chambre de torture officieuse. Il y a un calice d'or dedans. Volez-le et revenez prendre votre recompense.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "HOW AM I SUPPOSED TO DO THAT?";
-			nomessage = "NO.  you don't have what i want for the  HOW AM I SUPPOSED TO DO THAT?!";
-			giveitem = 194;
+			text = "Comment puis-je faire ?";
+			nomessage = "NO.  you don't have what i want for the  Comment puis-je faire ?!";
 			nextpage = 4;
 			closedialog = false;
 		}
@@ -896,13 +886,13 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA004";
-		dialog = "HERE'S A CROSSBOW, JUST AIM STRAIGHT AND --SPLAT--.   REMEMBER, GRAB THE FANCY CUP AND GET TO THE TAVERN.";
+		dialog = "Voici une arbalete, visez juste et --vlan--. N'oubliez pas, prenez la belle coupe et allez a la taverne.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "COOL. I'll get it.";
-			nomessage = "NO.  you don't have what i want for the  COOL. I'll get it.!";
+			text = "Cool. Je vais la chercher.";
+			nomessage = "NO.  you don't have what i want for the  Cool. Je vais la chercher.!";
 			nextpage = 5;
 			closedialog = true;
 		}
@@ -912,7 +902,7 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA006";
-		dialog = "WHAT ARE YOU WAITING FOR? BRING ME THAT CHALICE.";
+		dialog = "Qu'attendez-vous ? Ramenez le calice.";
 		drop = 305;
 		link = 6;
 		ifitem
@@ -925,12 +915,17 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA007";
-		dialog = "HEY, I KNOW, KINDA LOOKS LIKE A SET-UP. I WOULD NEVER DO THAT TO SUCH A GREAT KILLING MACHINE.  GOT THE ITEM? GREAT! NOW GET READY, GOLD AND GLORY JUST LIKE I PROMISED. TAKE THIS KEY AND THE GOVERNOR WILL REWARD YOU.";
+		dialog = "Heh, je sais, c'est un sacre reglage. Je n'aurais jamais fait ca a une telle machine de guerre. Vous avez l'objet ? Parfait ! A present, preparez-vous, l'or et la gloire, comme convenu. Prenez cette cle et le gouverneur vous recompensera.";
 		drop = 305;
 		link = 0;
 		choice
 		{
-			text = "HE'D BETTER. FOR YOUR SAKE!";
+			text = "Ca vaut mieux pour vous !";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -941,16 +936,14 @@ conversation
 				item = 174;
 				amount = 1;
 			}
-			displaycost = false;
-			nomessage = "NO.  you don't have what i want for the  HE'D BETTER. FOR YOUR SAKE!!";
-			giveitem = 134;
+			nomessage = "NO.  you don't have what i want for the  Ca vaut mieux pour vous !!";
 			nextpage = 7;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "WHAT! WHERE'S MY MONEY?";
-			nomessage = "NO.  you don't have what i want for the  WHAT! WHERE'S MY MONEY?!";
+			text = "Quoi ! Ou est le fric ?";
+			nomessage = "NO.  you don't have what i want for the  Quoi ! Ou est le fric ?!";
 			nextpage = 8;
 			closedialog = false;
 		}
@@ -960,7 +953,7 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HATBL";
-		dialog = "GET LOST KID, YOU BOTHER ME.";
+		dialog = "Degage, gamin, tu me genes.";
 		drop = 301;
 		link = 0;
 	}
@@ -969,7 +962,7 @@ conversation
 		name = "HARRIS";
 		panel = "M_PEAS1";
 		voice = "HA002";
-		dialog = "NO SECOND CHANCE.  OH GUARDS, KILL HIM.";
+		dialog = "Non, pas de seconde chance. Gardes, tuez-le.";
 		drop = 305;
 		link = 0;
 	}
@@ -980,10 +973,10 @@ conversation
 	actor = 27;
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV01";
-		dialog = "FIRST THEY SLAUGHTER THOUSANDS, NOW THEY WANT ALL ABLE-BODIED PEASANTS FOR UNSPECIFIED \"TESTS\".   HOW DOES THE ORDER EXPECT ME TO KEEP THE PEACE? WHAT THE HELL DO YOU WANT?";
+		dialog = "D'abord ils en massacrent des milliers, et maintenant ils veulent tous les paysans capables pour des \"tests\" sans plus de details. Comment voulez-vous que je maintienne la paix ? Et que voulez-vous ?";
 		drop = 301;
 		link = 11;
 		ifitem
@@ -992,49 +985,49 @@ conversation
 		}
 		choice
 		{
-			text = "A PRISON PASS, LET'S DEAL.";
-			nomessage = "NO.  you don't have what i want for the  A PRISON PASS, LET'S DEAL.!";
+			text = "La cle de la prison, marchandons.";
+			nomessage = "NO.  you don't have what i want for the  La cle de la prison!";
 			nextpage = 2;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV02";
-		dialog = "I LIKE YOU ALREADY. I HAVE TWO CHORES THAT I DON'T WANT TO DO MYSELF.  ONE IS MESSY, THE OTHER BLOODY.";
+		dialog = "Je vous apprecie deja. J'ai deux corvees que je voudrais deleguer. L'une est sale, l'autre est sanglante.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "CALL ME THE CLEANER";
-			nomessage = "NO.  you don't have what i want for the  CALL ME THE CLEANER!";
-			giveitem = 315;
+			text = "Je suis bon nettoyeur.";
+			nomessage = "NO.  you don't have what i want for the  Je suis bon nettoyeur.!";
+			giveitem = 993737531;
 			nextpage = 3;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "I'M NOT SQUEAMISH";
-			nomessage = "NO.  you don't have what i want for the  I'M NOT SQUEAMISH!";
-			giveitem = 316;
+			text = "Je ne suis pas delicat.";
+			nomessage = "NO.  you don't have what i want for the  Je ne suis pas delicat.!";
+			giveitem = 1010580540;
 			nextpage = 5;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV03";
-		dialog = "ONE OF MY MINIONS IS STEALING POWER WITH A TAP ON THE MAINS SOMEWHERE. FIND IT AND TRUNCATE HIS SUPPLY AND I'LL PROVIDE YOU WITH WHAT YOU WANT. BRING ME SOMETHING AS A TOKEN.";
+		dialog = "Un de mes larbins vole de la puissance avec un robinet dans les principaux quartiers quelque part. Trouvez-le et tronquez ses reserves et je vous donnerai ce que vous cherchez. N'oubliez pas de me ramener une preuve.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "WHERE DO I FIND THIS TAP?";
-			nomessage = "NO.  you don't have what i want for the  WHERE DO I FIND THIS TAP?!";
+			text = "Ou trouverais-je le robinet ?";
+			nomessage = "NO.  you don't have what i want for the  Ou trouverais-je le robinet ?!";
 			log = "LOG1007";
 			nextpage = 4;
 			closedialog = false;
@@ -1042,10 +1035,10 @@ conversation
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV04";
-		dialog = "IF I KNEW, IT WOULDN'T BE A CHORE NOW WOULD IT? USE YOUR CHARM, BUT SHUT OFF HIS SUPPLY.";
+		dialog = "Si je le savais, ce ne serait pas une corvee, n'est-ce pas ? Faites ce qu'il faut mais fermez ses reserves.";
 		drop = 301;
 		link = 7;
 		ifitem
@@ -1055,28 +1048,27 @@ conversation
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV05";
-		dialog = "TELL YOU WHAT, THERE'S A LYING SACK NAMED DERWIN WHO HAS BEEN SELLING CHILDREN TO THE ORDER. I WON'T TOLERATE THAT KIND OF DEPRAVITY. NOT WITHOUT MY CUT. DERWIN WORKS IN THE WAREHOUSE. KILL HIM AND BRING ME HIS, EAR, AND I'LL SEE WHAT I CAN DO.";
+		dialog = "Il y a un sac d'os vivant du nom de Derwin qui vend des enfants à l'Ordre. Je ne tolere pas ce genre de depravation. Pas sans mon aval. Derwin travaille dans l'entrepot. Tuez-le et ramenez-moi son oreille. Et je verrai ce que je peux faire.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "HOW DO I GET IN?";
-			nomessage = "NO.  you don't have what i want for the  HOW DO I GET IN?!";
+			text = "Comment j'entre ?";
+			nomessage = "NO.  you don't have what i want for the  Comment j'entre ?!";
 			log = "LOG1008";
-			giveitem = 135;
 			nextpage = 6;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV06";
-		dialog = "THIS KEY WILL GET YOU INTO THE POWER STATION. ON SECOND THOUGHT, CUT OFF THE EAR AND THEN KILL HIM. MUCH BETTER.";
+		dialog = "Cette cle vous permettra d'entrer dans la centrale electrique. Oh, et en fait, coupez d'abord l'oreille puis tuez-le. Ce sera mieux.";
 		drop = 301;
 		link = 9;
 		ifitem
@@ -1086,15 +1078,20 @@ conversation
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV08";
-		dialog = "OH, I JUST LOVE SOUVENIRS. HERE, THIS WILL GET YOU INTO THE PRISON. TALK TO WARDEN MONTAG. WHATEVER YOU DO AFTER THAT, I DON'T WANT TO KNOW.";
+		dialog = "Oh, j'adore les petits souvenirs. Voila, ceci vous permettra d'entrer dans la prison. Parlez a Warden Montag. Je me fous de ce que vous ferez apres.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "THANKS.";
+			text = "Merci.";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -1105,34 +1102,38 @@ conversation
 				item = 289;
 				amount = 1;
 			}
-			displaycost = false;
-			nomessage = "NO.  you don't have what i want for the  THANKS.!";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			log = "LOG1009";
-			giveitem = 304;
+			giveitem = 808464432;
 			nextpage = 8;
 			closedialog = true;
 		}
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOTBL";
-		dialog = "GIVE YOU A HINT. WHEN I STOP TALKING TO YOU, YOU LEAVE.";
+		dialog = "J'ai un indice pour vous. Quand je cesse de parler, vous etes suppose partir.";
 		drop = 171;
 		link = 0;
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV07";
-		dialog = "DO YOU HAVE GOOD NEWS FOR ME? I'M ALL EARS.";
+		dialog = "Avez-vous de bonnes nouvelles ? Je suis tout ouie.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "THE DEED IS DONE!";
+			text = "L'affaire est faite !";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -1143,51 +1144,50 @@ conversation
 				item = 175;
 				amount = 1;
 			}
-			displaycost = false;
-			nomessage = "NO.  you don't have what i want for the  THE DEED IS DONE!!";
+			nomessage = "NO.  you don't have what i want for the  L'affaire est faite !!";
 			nextpage = 10;
 			closedialog = false;
 		}
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV08";
-		dialog = "OH, I JUST LOVE SOUVENIRS. HERE, THIS WILL GET YOU INTO THE PRISON. TALK TO WARDEN MONTAG. WHATEVER YOU DO AFTER THAT, I DON'T WANT TO KNOW.";
+		dialog = "Oh, j'adore les petits souvenirs. Voila, ceci vous permettra d'entrer dans la prison. Parlez a Warden Montag. Je me fous de ce que vous ferez apres.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "FINE BY ME.";
-			nomessage = "NO.  you don't have what i want for the  FINE BY ME.!";
+			text = "Bien.";
+			nomessage = "NO.  you don't have what i want for the  Bien.!";
 			log = "LOG1009";
-			giveitem = 304;
+			giveitem = 808464432;
 			nextpage = 8;
 			closedialog = true;
 		}
 	}
 	page
 	{
-		name = "GOVERNOR MOUREL";
+		name = "GOUV. MOUREL";
 		panel = "M_PEAS7";
 		voice = "GOV6A1";
-		dialog = "SO YOU'RE THE FOOL WHO STOLE THE CHALICE?  I'M GOING TO HAVE YOU    ARRESTED AS A REBEL THIEF... THEREBY ENHANCING MY POSITION WITH THE   ORDER.  HOW DOES IT FEEL TO BE AN UNWITTING PAWN? I'LL GIVE YOU A HINT, IT'S GONNA' HURT. ";
+		dialog = "C'est vous l'idiot qui a vole le calice? Je vais vous faire arreter comme voleur rebelle... Et je m'eleverai dans la hierarchie de l'Ordre. Ca fait quoi d'etre un pion involontaire ? J'ai un indice, ca va faire mal.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "IT SUCKS!";
-			yesmessage = "FOR YOU IT DOES.";
-			nomessage = "NO.  you don't have what i want for the  IT SUCKS!!";
-			giveitem = 301;
+			text = "C'est nul !";
+			yesmessage = "Pour vous, oui.";
+			nomessage = "NO.  you don't have what i want for the  C'est nul !!";
+			giveitem = 757935405;
 		}
 		choice
 		{
-			text = "HARRIS PROMISED ME MONEY!";
-			yesmessage = "TOO BAD.  THE ONLY THING YOU'RE GETTING IS DEAD!";
-			nomessage = "NO.  you don't have what i want for the  HARRIS PROMISED ME MONEY!!";
-			giveitem = 301;
+			text = "HARRIS m'a promis du fric !";
+			yesmessage = "Dommage. Votre seule recompense sera la mort !";
+			nomessage = "NO.  you don't have what i want for the  HARRIS m'a promis du fric !!";
+			giveitem = 757935405;
 		}
 	}
 }
@@ -1200,7 +1200,7 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET01";
-		dialog = "Les mots vont vite dans ce petit monde. J'ai entendu dire que tu as enleve des obstacles genants sur ton chemin. Bravo. Serais-tu interesse par des projets plus lucratifs ?";
+		dialog = "Les nouvelles vont vite dans ce petit monde. J'ai entendu dire que tu as enleve des obstacles genants sur ton chemin. Bravo. Serais-tu interesse par des projets plus lucratifs ?";
 		drop = 301;
 		link = 0;
 		choice
@@ -1214,7 +1214,7 @@ conversation
 		{
 			text = "Non merci.";
 			nomessage = "NO.  you don't have what i want for the  Non merci.!";
-			giveitem = 301;
+			giveitem = 757935405;
 			nextpage = 2;
 			closedialog = false;
 		}
@@ -1257,7 +1257,6 @@ conversation
 		{
 			text = "Merci, ca va m'aider.";
 			nomessage = "NO.  you don't have what i want for the  Merci, ca va m'aider.!";
-			giveitem = 194;
 			nextpage = 5;
 			closedialog = false;
 		}
@@ -1287,12 +1286,17 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET07";
-		dialog = "MISSION ACCOMPLISHED? YOU HAVE THE RING OF THE TRAITOR?";
+		dialog = "Mission accomplie ? Vous avez l'anneau du traitre?";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "HE'S DEAD, WHERE'S MY MONEY?";
+			text = "Il est mort. Ou est l'argent ?";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -1303,9 +1307,7 @@ conversation
 				item = 173;
 				amount = 1;
 			}
-			displaycost = false;
-			nomessage = "LIAR!  Go get the ring!";
-			giveitem = 171;
+			nomessage = "Menteur ! Retournez-y !";
 			nextpage = 7;
 			closedialog = false;
 		}
@@ -1315,22 +1317,21 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET09";
-		dialog = "HERE, YOU EARNED IT. THE TRAITOR YOU KILLED WAS ABOUT TO REVEAL THE LOCATION OF THE FRONT. YOU SAVED LIVES. HOW WOULD YOU LIKE TO EARN MORE GOLD, AND A FUTURE FREE FROM TYRANNY?";
+		dialog = "Voila, vous l'avez merite. Le traitre que vous avez elimine etait sur le point de reveler l'emplacement du Front. Vous avez sauve des vies. Ca vous interesserait, plus d'or et un futur libre de la tyrannie ?";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "TELL ME MORE.";
-			nomessage = "NO.  you don't have what i want for the  TELL ME MORE.!";
-			giveitem = 133;
+			text = "Dites m'en plus.";
+			nomessage = "NO.  you don't have what i want for the  Dites m'en plus.!";
 			nextpage = 8;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "NOT MY STYLE.";
-			nomessage = "NO.  you don't have what i want for the  NOT MY STYLE.!";
-			giveitem = 301;
+			text = "C'est pas mon truc.";
+			nomessage = "NO.  you don't have what i want for the  C'est pas mon truc.!";
+			giveitem = 757935405;
 			nextpage = 10;
 			closedialog = false;
 		}
@@ -1340,15 +1341,14 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET12";
-		dialog = "I HAVE A BUSINESS RELATIONSHIP WITH THE FRONT'S LEADER, MACIL. I KNOW HE NEEDS AN INCISIVE FELLOW LIKE YOURSELF, AND HE PAYS WELL. TAKE THIS RECOVERED COM UNIT AND YOU'LL BE LED TO, SHALL WE SAY, OPPORTUNITIES.";
+		dialog = "Je fais souvent affaires avec le leader du Front, Macil. Je sais qu'il a besoin de gens incisifs tels que vous, et il paye bien. Prenez cet intercom et vous serez conduit a, disons, des opportunites.";
 		drop = 301;
 		link = 0;
 		choice
 		{
-			text = "THANKS.";
-			nomessage = "NO.  you don't have what i want for the  THANKS.!";
+			text = "Merci.";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			log = "LOG1004";
-			giveitem = 176;
 			nextpage = 9;
 			closedialog = false;
 		}
@@ -1358,7 +1358,7 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET06";
-		dialog = "GET GOING. IF YOU HANG AROUND HERE, WE'RE BOTH DEAD.";
+		dialog = "Faites vite. Si vous restez dans le coin, nous sommes tous les deux morts.";
 		drop = 301;
 		link = 0;
 	}
@@ -1367,7 +1367,7 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET11";
-		dialog = "A PITY, BUT NOW THAT YOU KNOW ABOUT MY FRIENDS, I MUST KILL YOU. GUARDS, TAKE OUT THIS TRASH!";
+		dialog = "Quel dommage, mais maintenant que vous connaissez mes relations, je dois vous faire tuer. Gardes, detruisez-moi cette ordure !";
 		drop = 301;
 		link = 0;
 	}
@@ -1376,7 +1376,7 @@ conversation
 		name = "ROWAN";
 		panel = "M_RETRIC";
 		voice = "RET05";
-		dialog = "FOOL. GUARDS! RID ME OF MEDDLESOME PEON.";
+		dialog = "Pauvre fou ! Gardes, debarassez-moi de ce paon.";
 		drop = 301;
 		link = 0;
 	}
@@ -1390,7 +1390,7 @@ conversation
 		name = "GEOFF";
 		panel = "M_GEOFF";
 		voice = "GETBL";
-		dialog = "WALK AWAY, BOY, JUST WALK AWAY.";
+		dialog = "Circule, mon garcon, circule.";
 		drop = 179;
 		link = 2;
 		ifitem
@@ -1403,7 +1403,7 @@ conversation
 		name = "GEOFF";
 		panel = "M_GEOFF";
 		voice = "GEO01";
-		dialog = "WHAT ARE YOU DOING HERE?";
+		dialog = "Que fais-tu ici ?";
 		drop = 179;
 		link = 4;
 		ifitem
@@ -1412,7 +1412,12 @@ conversation
 		}
 		choice
 		{
-			text = "HEY, I NEED GOLD!";
+			text = "J'ai besoin d'argent !";
+			cost
+			{
+				item = -1;
+				amount = 0;
+			}
 			cost
 			{
 				item = 168;
@@ -1423,9 +1428,8 @@ conversation
 				item = 133;
 				amount = 1;
 			}
-			displaycost = false;
-			nomessage = "NO.  you don't have what i want for the  HEY, I NEED GOLD!!";
-			giveitem = 302;
+			nomessage = "NO.  you don't have what i want for the  J'ai besoin d'argent !!";
+			giveitem = 774778414;
 			nextpage = 3;
 			closedialog = false;
 		}
@@ -1435,13 +1439,13 @@ conversation
 		name = "GEOFF";
 		panel = "M_GEOFF";
 		voice = "GEO02";
-		dialog = "BLACKBIRD TOLD YOU THE CODE, HUH? LET ME SHUT OFF THE ALARM. MACIL IS ONE FLIGHT DOWN.";
+		dialog = "Blackbird t'a donne le code, hein? Laisse-moi eteindre cette alarme. Macil va battre de l'aile.";
 		drop = 179;
 		link = 0;
 		choice
 		{
-			text = "THANKS.";
-			nomessage = "NO.  you don't have what i want for the  THANKS.!";
+			text = "Merci.";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			nextpage = 4;
 			closedialog = true;
 		}
@@ -1451,7 +1455,7 @@ conversation
 		name = "GEOFF";
 		panel = "M_GEOFF";
 		voice = "GETBL";
-		dialog = "WALK AWAY, BOY, JUST WALK AWAY.";
+		dialog = "Circule, mon garcon, circule.";
 		drop = 179;
 		link = 0;
 	}
@@ -1463,20 +1467,20 @@ conversation
 	page
 	{
 		name = "ARION";
-		dialog = "DO YOU HAVE AN APPOINTMENT WITH THE GOVERNOR? ";
+		dialog = "Vous avez rendez-vous avec le gouverneur ?";
 		drop = 169;
 		link = 0;
 		choice
 		{
-			text = "OF COURSE!";
-			nomessage = "NO.  you don't have what i want for the  OF COURSE!!";
+			text = "Bien sur !";
+			nomessage = "NO.  you don't have what i want for the  Bien sur !!";
 			nextpage = 2;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "NO, AND I DON'T NEED ONE!";
-			nomessage = "NO.  you don't have what i want for the  NO, AND I DON'T NEED ONE!!";
+			text = "Non, pas besoin !";
+			nomessage = "NO.  you don't have what i want for the  Non, pas besoin !!";
 			nextpage = 2;
 			closedialog = false;
 		}
@@ -1484,13 +1488,13 @@ conversation
 	page
 	{
 		name = "ARION";
-		dialog = "SORRY! I DIDN'T MEAN... PLEASE GO RIGHT UP.";
+		dialog = "Désolé ! Je ne pensais pas... C'est a l'etage au dessus.";
 		drop = 169;
 		link = 0;
 		choice
 		{
-			text = "I KNEW YOU'D SAY THAT.";
-			nomessage = "NO.  you don't have what i want for the  I KNEW YOU'D SAY THAT.!";
+			text = "Je savais que vous diriez ca.";
+			nomessage = "NO.  you don't have what i want for the  Je savais que vous diriez ca.!";
 			nextpage = 3;
 			closedialog = true;
 		}
@@ -1498,7 +1502,7 @@ conversation
 	page
 	{
 		name = "ARION";
-		dialog = "IF YOU'RE IN SUCH A HURRY, DON'T WASTE YOUR TIME WITH ME.";
+		dialog = "Si vous etes si presse, ne perdez pas de temps avec moi.";
 		drop = 169;
 		link = 0;
 	}
@@ -1512,7 +1516,7 @@ conversation
 		name = "MACGUFFIN";
 		panel = "M_MCGUFF";
 		voice = "MCTBL";
-		dialog = "RELEASE ME, LEAVE AN OLD MAN ALONE.";
+		dialog = "Laissez-moi, laissez ce vieil homme tranquille.";
 		drop = 0;
 		link = 2;
 		ifitem
@@ -1525,27 +1529,27 @@ conversation
 		name = "MACGUFFIN";
 		panel = "M_MCGUFF";
 		voice = "MAG01";
-		dialog = "YOU SEEK WISDOM, MY SON? THE ORDER HAS SEEN TO IT THAT WE ONLY ASK ONE QUESTION, \"WHY?\"";
+		dialog = "Tu cherches la sagesse, fiston ? L'Ordre m'a fait voir que nous nous posons qu'une seule question, \"Pourquoi ?\"";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "WHERE'S THE POWER COUPLING?";
-			nomessage = "NO.  you don't have what i want for the  WHERE'S THE POWER COUPLING?!";
+			text = "Ou est le couplage de puissance ";
+			nomessage = "NO.  you don't have what i want for the  Ou est le couplage de puissance ?!";
 			nextpage = 3;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "WHERE'S THE ORDER'S MAIN?";
-			nomessage = "NO.  you don't have what i want for the  WHERE'S THE ORDER'S MAIN?!";
+			text = "Ou est le chef de l'Ordre ?";
+			nomessage = "NO.  you don't have what i want for the  Ou est le chef de l'Ordre ?!";
 			nextpage = 4;
 			closedialog = false;
 		}
 		choice
 		{
-			text = "WHERE'S THE ILLEGAL TAP?";
-			nomessage = "NO.  you don't have what i want for the  WHERE'S THE ILLEGAL TAP?!";
+			text = "Ou est l'enregistrement illegal ";
+			nomessage = "NO.  you don't have what i want for the  Ou est l'enregistrement illegal ?!";
 			nextpage = 5;
 			closedialog = false;
 		}
@@ -1555,13 +1559,13 @@ conversation
 		name = "MACGUFFIN";
 		panel = "M_MCGUFF";
 		voice = "MAG02";
-		dialog = "I'LL TELL YOU WHERE IT IS, BUT I DON'T KNOW WHOSE COUPLING YOU'LL BE TAMPERING WITH.  IT'S RIGHT HERE IN THE SEWAGE PLANT.";
+		dialog = "Je te dirai ou il est, mais je ne sais pas si le coupleur que tu auras appartient a quelqu'un. Il est dans la station d'epuration.";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "THANKS";
-			nomessage = "NO.  you don't have what i want for the  THANKS!";
+			text = "Merci.";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			nextpage = 6;
 			closedialog = true;
 		}
@@ -1571,13 +1575,13 @@ conversation
 		name = "MACGUFFIN";
 		panel = "M_MCGUFF";
 		voice = "MAG03";
-		dialog = "THAT'S RIGHT HERE IN THE SEWAGE PLANT. BUT IT'S THE FRONT'S COUPLING. WHOEVER TOLD YOU THAT IT WAS THE ORDER'S WAS WRONG.";
+		dialog = "C'est dans la station d'epuration. Mais c'est le couplage du Front. Quiconque a dit que ca appartenait a l'ordre s'est trompe.";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "THANKS";
-			nomessage = "NO.  you don't have what i want for the  THANKS!";
+			text = "Merci.";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			nextpage = 6;
 			closedialog = true;
 		}
@@ -1587,13 +1591,13 @@ conversation
 		name = "MACGUFFIN";
 		panel = "M_MCGUFF";
 		voice = "MAG04";
-		dialog = "IF YOU SAY IT'S ILLEGAL I WANT NOTHING TO DO WITH YOU. I HAVE ENOUGH TROUBLE AS IT IS.";
+		dialog = "Si tu dis que c'est illegal, je ne veux rien faire avec toi. J'ai deja assez d'ennuis.";
 		drop = 0;
 		link = 0;
 		choice
 		{
-			text = "THANKS";
-			nomessage = "NO.  you don't have what i want for the  THANKS!";
+			text = "Merci.";
+			nomessage = "NO.  you don't have what i want for the  Merci.!";
 			nextpage = 6;
 			closedialog = true;
 		}
@@ -1603,7 +1607,7 @@ conversation
 		name = "MACGUFFIN";
 		panel = "M_MCGUFF";
 		voice = "MCTBL";
-		dialog = "RELEASE ME, LEAVE AN OLD MAN ALONE.";
+		dialog = "Laissez-moi, laissez ce vieil homme tranquille.";
 		drop = 0;
 		link = 0;
 	}

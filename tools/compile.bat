@@ -27,3 +27,4 @@ usdc -c ../scripts_src/SCRIPT31.o -o ../src/SCRIPT31.lmp
 usdc -c ../scripts_src/SCRIPT32.o -o ../src/SCRIPT32.lmp
 usdc -c ../scripts_src/SCRIPT33.o -o ../src/SCRIPT33.lmp
 usdc -c ../scripts_src/SCRIPT34.o -o ../src/SCRIPT34.lmp
+pause

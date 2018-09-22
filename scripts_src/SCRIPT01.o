@@ -7,7 +7,7 @@ conversation
 	page
 	{
 		name = "BELDIN";
-		dialog = "I DON'T WANT ANY TROUBLE, STAY AWAY FROM ME. I'VE HAD ENOUGH TROUBLE WITH WHAT THAT BASTARD HARRIS DID TO ME. HE PROMISED ME MONEY, INSTEAD I GET TO LOOK FORWARD TO BEING \"QUESTIONED\" BY THE PROGRAMMER.";
+		dialog = "Je ne veux pas d'ennuis, allez-vous en. J'ai deja assez d'emmerdes avec ce que cet enfoire de Harris m'a fait. Il m'a promis du fric. Et au lieu de ca, je vais me faire \"questionner\" par le programmeur.";
 		drop = 173;
 		link = 0;
 	}

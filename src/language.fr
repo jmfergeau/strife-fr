@@ -23,7 +23,7 @@ QUITMSG18 = "Personne n'abandonne Blackbird!";
 QUITMSG19 = "Je vous croyais different...";
 QUITMSG20 = "C'est ca! Tuez n'importe-qui \net barrez-vous comme ca !";
 QUITMSG21 = "Vous pouvez partir...\nMais vous ne pouvez pas vous cacher...";
-QUITMSG22 = "Bah, il est ou est le probleme?\nMaman a dit 'a table !'?";
+QUITMSG22 = "Bah, il est ou est le probleme ?\nMaman a dit 'a table !'?";
 
 
 // Obituary strings
@@ -231,7 +231,6 @@ TXT_FLAMER = "Vous avez pris un lance-flammes.";
 TXT_MAULER = "Vous avez pris un Broyeur.";
 TXT_GLAUNCHER = "Vous avez pris un lance-grenades";
 TXT_SIGIL = "Vous avez pris le SIGIL.";
-
 
 TXT_BASEKEY = "Vous avez pris la cle de la Base.";
 TXT_GOVSKEY = "Vous avez pris la cle du Gouverneur.";
