@@ -1,2 +1,0 @@
-IWAD = "STRIFE1.WAD"
-STARTUPTITLE = "Strife: La quete pour le Sigil "
