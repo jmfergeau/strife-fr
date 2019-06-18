@@ -1,0 +1,339 @@
+﻿//=====================================
+//French strings updated by Tapwave. reupdated by Max le Fou
+//Some strings are "missing" because they're identical in English.
+//(Usually 'secrets', but also some other items.)
+//=====================================
+
+[fr]
+
+// Quit Strife messages
+QUITMSG15 = "Ou allez-vous?\nQue va devenir la rebellion ?";
+QUITMSG16 = "Carnage interruptus...\nTout un programme !";
+QUITMSG17 = "Mais vous etes l'espoir,\n notre unique chance !";
+QUITMSG18 = "Personne n'abandonne Blackbird!";
+QUITMSG19 = "Je vous croyais different...";
+QUITMSG20 = "C'est ca! Tuez n'importe-qui\net barrez-vous comme ca !";
+QUITMSG21 = "Vous pouvez partir...\nMais vous ne pouvez pas vous cacher...";
+QUITMSG22 = "Bah, il est ou est le probleme ?\nMaman a dit 'a table !'?";
+
+
+// Obituary strings
+OB_ACOLYTE = "%o a souffert d'une bavure policiere.";
+OB_MACIL = "%o n'aurait jamais du se rebeller contre Macil.";
+OB_REBEL = "%o a ete abattu par un Rebel.";
+OB_BEGGAR = "%o a ete battu a mort par un pauvre.";
+OB_PEASANT = "%o n'aurait jamais du chercher des noises a un civil.";
+OB_ALIENSPECTRE = "%o a ete terrasse par le Spectre.";
+OB_ENTITY = "%o a senti le courroux du Seul Dieu.";
+OB_LOREMASTER = "%o n'a pu echapper a l'emprise du Maitre des Traditions.";
+OB_PROGRAMMER = "%o a ete efface par le Programmeur.";
+OB_STFBISHOP = "%o a ete pulverise par l'Eveque.";
+OB_SENTINEL = "%o a ete abattu par une Sentinelle.";
+OB_CRUSADER = "%o a ete balaye par un croise.";
+OB_INQUISITOR = "%o a ete condamne par un Inquisiteur.";
+OB_STALKER = "%o a ete asticote par un chasseur.";
+OB_TURRET = "%o a declenche les defenses automatiques.";
+OB_TEMPLARHIT = "%o a ete griffe par un Templier.";
+OB_TEMPLAR = "%o a ete vaporise par un Templier.";
+OB_REAVERHIT = "%o a ete fendu par un Reaver.";
+OB_REAVER = "%o a ete descendu par un Reaver.";
+
+OB_MPPUNCHDAGGER = "%o s'est fait planter un lame dans le dos de la part de %k."; 
+OB_MPELECTRICBOLT = "%o s'est fait clouer au mur par %k."; 
+OB_MPPOISONBOLT = "%o a recu une dose letale de la colere de %k."; 
+OB_MPASSAULTGUN = "%o s'est fait couvrir de trous par le fusil d'assaut de %k."; 
+OB_MPMINIMISSILELAUNCHER = "%o a avale le missile de %k."; 
+OB_MPSTRIFEGRENADE = "%o a ete mis sens dessus dessous pa la grenade explosive de %k."; 
+OB_MPPHOSPHOROUSGRENADE = "%o s'est permis une pyroclave dans les flammes phosphoriques de %k."; 
+OB_MPFLAMETHROWER = "%o est passe au barbecue de %k."; 
+OB_MPMAULER1 = "%o s'est fait electrocuter par %k.";
+OB_MPMAULER = "%o a ete vicieusement vaporise par %k."; 
+OB_MPSIGIL = "%o s'est prosterne face a la toute puissance du Sigil de %k.";
+
+// Item tags: Strife weapons
+TAG_PUNCHDAGGER = "Dague de Poing";
+TAG_STRIFECROSSBOW1 = "Arbalete";
+TAG_STRIFECROSSBOW2 = "Arbalete";
+TAG_ASSAULTGUN = "Fusil d'Assaut";
+TAG_MMLAUNCHER = "Lanceur de Mini-Missiles";
+TAG_FLAMER = "Lance-Flammes";
+TAG_MAULER1 = "Broyeur";
+TAG_MAULER2 = "Broyeur";
+TAG_GLAUNCHER1 = "Lance-Grenades";
+TAG_GLAUNCHER2 = "Lance-Grenades";
+TAG_SIGIL = "SIGIL";
+
+// Item tags: Strife artifacts
+TAG_COIN = "Piece";
+TAG_MEDPATCH = "Pansement";
+TAG_MEDICALKIT = "Kit Medical";
+TAG_SURGERYKIT = "Kit de Chirurgie";	// "full_health" in the Teaser
+TAG_BELDINSRING = "Anneau";
+TAG_OFFERINGCHALICE = "Calice d'Obole";
+TAG_EAR = "Oreille";
+TAG_BROKENCOUPLING = "Coupleur Energetique casse";
+TAG_SHADOWARMOR = "Armure de l'Ombre";
+TAG_ENVSUIT = "Combinaison Hazmat";
+TAG_GUARDUNIFORM = "Uniforme de Garde";
+TAG_OFFICERSUNIFORM = "Uniforme d'Officier";
+TAG_FTHROWERPARTS = "Pieces de Lance-Flammes";
+TAG_REPORT = "Compte-rendu";
+TAG_INFO = "Info";
+TAG_TARGETER = "Cibleur";
+TAG_COMMUNICATOR = "Communicateur";
+TAG_DEGNINORE = "Minerai de Degnin";
+TAG_GUNTRAINING = "Precision";
+TAG_HEALTHTRAINING = "Endurance";
+TAG_SCANNER = "Analyseur";
+TAG_PRISONPASS = "Passe de la Prison";
+TAG_ALARM = "Alarme";
+TAG_AMMOFILLUP = "Munitions";
+TAG_HEALTHFILLUP = "Sante";
+TAG_TELEPORTERBEACON = "Balise de teleportation";
+TAG_METALARMOR = "Armure en Metal";
+TAG_LEATHER = "Armure en Cuir";
+TAG_HEGRENADES = "Grenades Explosives";
+TAG_PHGRENADES = "Grenades Incendiaires";	// "Fire-Grenade_Rounds" in the Teaser
+TAG_CLIPOFBULLETS = "Chargeur d'Assaut";	// "bullets" in the Teaser
+TAG_BOXOFBULLETS = "Boite de Munitions";
+TAG_MINIMISSILES = "Mini-Missiles";	//"rocket" in the Teaser
+TAG_CRATEOFMISSILES = "Caisse de Mini-Missiles";	//"box_of_rockets" in the Teaser
+TAG_ENERGYPOD = "Cellule Energetique";
+TAG_ENERGYPACK = "Pack Energetique";
+TAG_POISONBOLTS = "Carreaux Empoisonnes";	// "poison_arrows" in the Teaser
+TAG_ELECTRICBOLTS = "Carreaux Electriques";	// "electric_arrows" in the Teaser
+TAG_AMMOSATCHEL = "Sacoche a munitions";	// "Back_pack" in the Teaser
+
+// Item tags: Strife keys
+TAG_BASEKEY = "Cle de la base";
+TAG_GOVSKEY = "Cle du Gouverneur";	// "Rebel_Key" in the Teaser
+TAG_PASSCARD = "Passe";
+TAG_IDBADGE = "Badge d'Identification";
+TAG_PRISONKEY = "Passe de la Prison";
+TAG_SEVEREDHAND = "Main coupee";
+TAG_POWER1KEY = "Cle Power1";
+TAG_POWER2KEY = "Cle Power2";
+TAG_POWER3KEY = "Cle Power3";
+TAG_GOLDKEY = "Cle en Or";
+TAG_IDCARD = "Carte d'Identite";
+TAG_SILVERKEY = "Cle en Argent";
+TAG_ORACLEKEY = "Cle de l'Oracle";
+TAG_MILITARYID = "Identification Militaire";
+TAG_ORDERKEY = "Cle de l'Ordre";
+TAG_WAREHOUSEKEY = "Cle de l'Entrepôt";
+TAG_BRASSKEY = "Cle en Bronze";
+TAG_REDCRYSTALKEY = "Cle de Cristal Rouge";
+TAG_BLUECRYSTALKEY = "Cle de Crisal Bleu";
+TAG_CHAPELKEY = "Cle de la Chapelle";
+TAG_CATACOMBKEY = "Cle des Catacombes";	// "Tunnel_Key" in the Teaser
+TAG_SECURITYKEY = "Cle de la Securite";
+TAG_COREKEY = "Cle du Reacteur";	// "New_Key1" in the Teaser
+TAG_MAULERKEY = "Cle du Broyeur";	// "New_Key2" in the Teaser
+TAG_FACTORYKEY = "Cle de l'Usine";	// "New_Key3" in the Teaser
+TAG_MINEKEY = "Cle de la Mine";	// "New_Key4" in the Teaser
+TAG_NEWKEY5 = "New Key5";
+TAG_ORACLEPASS = "Passe de l'Oracle";
+
+// Item tags: misc Strife stuff
+TAG_10GOLD = "10 Pieces";
+TAG_25GOLD = "25 Pieces";
+TAG_50GOLD = "50 Pieces";
+TAG_300GOLD = "300 Pieces";
+TAG_QUEST4 = "quest4";
+TAG_QUEST5 = "quest5";
+TAG_QUEST6 = "quest4";
+
+// Item tags: Strife NPCs
+TAG_ACOLYTE = "Acolyte";
+TAG_ARMORER = "Armurier";
+TAG_BARKEEP = "Barman";
+TAG_BEGGAR = "Mendiant";
+TAG_MACIL1 = "Macil";
+TAG_MACIL2 = "Macil";
+TAG_MEDIC = "Medecin";
+TAG_ORACLE = "Oracle";
+TAG_PRIEST = "Pretre";
+TAG_RATBUDDY = "Copain Rat";
+TAG_REBEL = "Rebelle";
+TAG_TEMPLAR = "Templier";
+TAG_WEAPONSMITH = "Forgeron";
+
+// Strife locks
+
+TXT_NEEDKEY = "Vous n'avez pas la cle.";
+TXT_NEED_PASSCARD = "Vous avez besoin du passe.";
+TXT_NEED_PASSCARD_DOOR = "Vous avez besoin du passe ouvrir cette porte.";
+TXT_NEED_IDCARD = "Vous avez besoin d'une carte d'identite.";
+TXT_NEED_PRISONKEY = "Vous n'avez pas la cle de la prison.";
+TXT_NEED_HANDPRINT = "Votre main n'est pas reconnue par le scanner.";
+TXT_NEED_GOLDKEY = "Vous avez besoin d'une cle d'or.";
+TXT_NEED_IDBADGE = "Vous avez besoin d'un badge d'identification.";
+TXT_NEED_IDBADGE_DOOR = "Vous avez besoin d'un badge d'identification pour ouvrir cette porte.";
+TXT_NEED_SILVERKEY = "Vous avez besoin de la cle en argent.";
+TXT_NEED_BRASSKEY = "Vous avez besoin de la cle en bronze.";
+TXT_NEED_REDCRYSTAL = "Vous avez besoin du cristal rouge.";
+TXT_NEED_BLUECRYSTAL = "Vous avez besoin du cristal bleu.";
+
+
+// Strife Quest messages
+
+TXT_QUEST_14 = "Vous avez explose le cristal !";
+TXT_QUEST_16 = "Vous avez explose les portes !";
+TXT_QUEST_27 = "Vous avez explose l'ordinateur !";
+
+TXT_KILLED_BISHOP = "Vous avez tue l'Eveque !";
+TXT_KILLED_ORACLE = "Vous avez tue l'Oracle !";
+TXT_KILLED_MACIL = "Vous avez tue Macil !";
+TXT_KILLED_LOREMASTER = "Vous avez tue le Loremaster !";
+
+// Strife pickup messages
+
+TXT_METALARMOR = "Vous avez pris une armure de metal.";
+TXT_LEATHERARMOR = "Vous avez pris une armure de cuir.";
+TXT_MEDPATCH = "Vous avez pris un pansement.";
+TXT_MEDICALKIT = "Vous avez pris un kit medical.";
+TXT_SURGERYKIT = "Vous avez pris un kit de chirurgie.";
+TXT_STRIFEMAP = "Vous avez pris la carte";
+TXT_BELDINSRING = "Vous avez pris l'anneau de Beldin.";
+TXT_OFFERINGCHALICE = "Vous avez pris le Calice d'obole.";
+TXT_EAR = "Vous avez pris l'oreille.";
+TXT_BROKENCOUPLING = "Vous avez pris le coupleur energetique casse.";
+TXT_SHADOWARMOR = "Vous avez pris l'armure de l'ombre.";
+TXT_ENVSUIT = "Vous avez pris la combinaison hazmat.";
+TXT_GUARDUNIFORM = "Vous avez pris l'Uniforme du garde.";
+TXT_OFFICERSUNIFORM = "Vous avez pris l'Uniforme d'officier.";
+TXT_FTHROWERPARTS = "Vous avez pris les pieces du lance-flammes.";
+TXT_REPORT = "Vous avez pris le compte-rendu.";
+TXT_INFO = "Vous avez pris l'info.";
+TXT_TARGETER = "Vous avez pris le cibleur.";
+TXT_COMMUNICATOR = "Vous avez pris le Communicateur";
+TXT_COIN = "Vous avez pris la piece.";
+TXT_XGOLD = "Vous avez pris %d pieces.";
+TXT_BEACON = "Vous avez pris la balise de teleporteur.";
+TXT_DEGNINORE = "Vous avez pris le minerai de Degnin.";
+TXT_SCANNER = "Vous avez pris l'analyseur.";
+TXT_NEEDMAP = "L'analyseur ne marchera pas sans une carte!\n";
+TXT_PRISONPASS = "Vous avez pris le passe de la prison.";
+
+TXT_STRIFECROSSBOW = "Vous avez pris une arbalete.";
+TXT_ASSAULTGUN = "Vous avez pris un fusil d'assaut.";
+TXT_MMLAUNCHER = "Vous avez pris un lance mini-missile.";
+TXT_FLAMER = "Vous avez pris un lance-flammes.";
+TXT_MAULER = "Vous avez pris un Broyeur.";
+TXT_GLAUNCHER = "Vous avez pris un lance-grenades";
+TXT_SIGIL = "Vous avez pris le SIGIL.";
+
+TXT_BASEKEY = "Vous avez pris la cle de la Base.";
+TXT_GOVSKEY = "Vous avez pris la cle du Gouverneur.";
+TXT_PASSCARD = "Vous avez pris le passe.";
+TXT_IDBADGE = "Vous avez pris le Badge d'identification.";
+TXT_PRISONKEY = "Vous avez pris la cle de la Prison.";
+TXT_SEVEREDHAND = "Vous avez pris la main coupee.";
+TXT_POWER1KEY = "Vous avez pris la cle Power1.";
+TXT_POWER2KEY = "Vous avez pris la cle Power2.";
+TXT_POWER3KEY = "Vous avez pris la cle Power3.";
+TXT_GOLDKEY = "Vous avez pris la cle d'or.";
+TXT_IDCARD = "Vous avez pris la Carte d'identite.";
+TXT_SILVERKEY = "Vous avez pris la cle d'argent.";
+TXT_ORACLEKEY = "Vous avez pris la cle de l'Oracle.";
+TXT_MILITARYID = "Vous avez pris l'ID Militaire.";
+TXT_ORDERKEY = "Vous avez pris la cle de l'Ordre.";
+TXT_WAREHOUSEKEY = "Vous avez pris la cle de l'entrepôt.";
+TXT_BRASSKEY = "Vous avez pris la cle de bronze.";
+TXT_REDCRYSTAL = "Vous avez pris la cle cristal rouge.";
+TXT_BLUECRYSTAL = "Vous avez pris la cle cristal bleu.";
+TXT_CHAPELKEY = "Vous avez pris la cle de la chapelle.";
+TXT_CATACOMBKEY = "Vous avez pris la cle des Catacombes.";
+TXT_SECURITYKEY = "Vous avez pris la cle de Securite.";
+TXT_COREKEY = "Vous avez pris la cle du reacteur.";
+TXT_MAULERKEY = "Vous avez pris la cle du Broyeur.";
+TXT_FACTORYKEY = "Vous avez pris la cle de l'usine.";
+TXT_MINEKEY = "Vous avez pris la cle de la mine.";
+TXT_NEWKEY5 = "Vous avez pris la nouvelle cle 5.";
+TXT_ORACLEPASS = "Vous avez pris le passe de l'Oracle.";
+
+TXT_HEGRENADES = "Vous avez pris des Grenades Explosives.";
+TXT_PHGRENADES = "Vous avez pris des Grenades Phosphoriques.";
+TXT_CLIPOFBULLETS = "Vous avez pris le Chargeur.";
+TXT_BOXOFBULLETS = "Vous avez pris la boite de balles.";
+TXT_MINIMISSILES = "Vous avez pris les mini-missiles.";
+TXT_CRATEOFMISSILES = "Vous avez pris la caisse de missiles.";
+TXT_ENERGYPOD = "Vous avez pris la cellule d'energie.";
+TXT_ENERGYPACK = "Vous avez pris le pack energetique.";
+TXT_POISONBOLTS = "Vous avez pris les carreaux empoisonnes.";
+TXT_ELECTRICBOLTS = "Vous avez pris les carreaux electriques.";
+TXT_AMMOSATCHEL = "Vous avez pris la sacoche de munitions";
+
+// Random dialogs
+
+TXT_RANDOM_PEASANT_01 = "S'il vous plait, laissez-moi tranquille.";
+TXT_RANDOM_PEASANT_02 = "Si vous cherchez a me faire du mal, Je n'en merite pas l'effort.";
+TXT_RANDOM_PEASANT_03 = "Je ne sais rien.";
+TXT_RANDOM_PEASANT_04 = "Allez vous-en ou j'appelle les gardes !";
+TXT_RANDOM_PEASANT_05 = "Je voudrais qu'a un moment, ces rebelles apprennent quelle est leur place et arretent ces idioties.";
+TXT_RANDOM_PEASANT_06 = "Laissez moi seul, OK ?";
+TXT_RANDOM_PEASANT_07 = "Je ne suis pas sûr, mais quelque fois je pense reconnaitre certains des acolytes.";
+TXT_RANDOM_PEASANT_08 = "L'ordre maintient la surete aux alentours.";
+TXT_RANDOM_PEASANT_09 = "Ca ne peut pas etre juste une escouade de securite...";
+TXT_RANDOM_PEASANT_10 = "J'ai entendu dire que l'Ordre etait sur les nerfs a cause des actions au front.";
+
+TXT_RANDOM_REBEL_01 = "L'Ordre n'a aucune chance contre nous.";
+TXT_RANDOM_REBEL_02 = "Nous sommes presque prets a agir. Les plans de Macil se deroulent comme prevu.";
+TXT_RANDOM_REBEL_03 = "On couvre tes arrieres, t'inquiete pas.";
+TXT_RANDOM_REBEL_04 = "Ne vous approchez pas trop des gros robots. Ils bruleront jusqu'a l'os!";
+TXT_RANDOM_REBEL_05 = "Le jour de gloire arrivera bientôt, et ceux qui s'opposeront a nous seront ecrases!";
+TXT_RANDOM_REBEL_06 = "Ne vous reposez pas sur vos lauriers. Du travail nous attend encore.";
+TXT_RANDOM_REBEL_07 = "Macil nous dis que tu es notre nouvel espoir. Garde ca a l'esprit.";
+TXT_RANDOM_REBEL_08 = "Une fois que nous nous serons debarrasses de ces charlatans, nous serons capable de rebatir le monde tel qu'il devrait etre.";
+TXT_RANDOM_REBEL_09 = "Souviens-toi, tu ne te bas pas seulement pour toi, mais pour tous le monde ici et ailleurs.";
+TXT_RANDOM_REBEL_10 = "Aussi longtemps qu'un de nous est vivant, nous vaincrons.";
+
+TXT_RANDOM_AGUARD_01 = "Barre-toi, paysan !";
+TXT_RANDOM_AGUARD_02 = "Suis la vraie foi, tu commenceras a comprendre.";
+TXT_RANDOM_AGUARD_03 = "C'est seulement a travers la mort que quelqu'un peut renaitre.";
+TXT_RANDOM_AGUARD_04 = "Je ne suis pas interesse par tes idioties inutiles.";
+TXT_RANDOM_AGUARD_05 = "Si j'avais voulu te parler je te l'aurais dit.";
+TXT_RANDOM_AGUARD_06 = "Va emmerder quelqu'un d'autre !";
+TXT_RANDOM_AGUARD_07 = "Degage !";
+TXT_RANDOM_AGUARD_08 = "Si l'alarme s'enclenche, reste en dehors de notre chemin !";
+TXT_RANDOM_AGUARD_09 = "L'Ordre nettoiera le monde et le conduira dans une nouvelle ere.";
+TXT_RANDOM_AGUARD_10 = "Un probleme ? Ca m'etonnerait.";
+
+TXT_RANDOM_BEGGAR_01 = "L'aumône pour un pauvre ?";
+TXT_RANDOM_BEGGAR_02 = "Qu'est-ce que tu regardes, habitant de la surface ?";
+TXT_RANDOM_BEGGAR_03 = "Aurais-tu de la nourriture en trop sur toi ?";
+TXT_RANDOM_BEGGAR_04 = "Vous, les gens de la surface, vous ne comprendrez jamais.";
+TXT_RANDOM_BEGGAR_05 = "Ha, les gardes ne nous trouveront jamais, ces idiots ne savent meme pas que l'on existe!";
+TXT_RANDOM_BEGGAR_06 = "Un jour, tous sauf les membres de l'ordre seront forces de nous rejoindre.";
+TXT_RANDOM_BEGGAR_07 = "Regarde-nous autant que tu veux, mais ceci sera aussi ton sort un jour.";
+TXT_RANDOM_BEGGAR_08 = "Il n'y a rien de plus barbant qu'un type de la surface et son attitude !";
+TXT_RANDOM_BEGGAR_09 = "L'Ordre se debarrassera de vos soldats pathetiques.";
+TXT_RANDOM_BEGGAR_10 = "Prend garde a toi, habitant de la surface. Nous connaissons nos ennemis !";
+
+TXT_RANDOM_PGUARD_01 = "Nous sommes les mains du destin. Apprendre notre colere est l'egal de trouver l'oubli !";
+TXT_RANDOM_PGUARD_02 = "L'Ordre nettoiera le monde des faibles et corrompus !";
+TXT_RANDOM_PGUARD_03 = "Obeissez a la volonte de vos maitres !";
+TXT_RANDOM_PGUARD_04 = "Longue vie aux membres de l'Ordre !";
+TXT_RANDOM_PGUARD_05 = "La liberte de penser est l'illusion qui aveugle les faibles d'esprit.";
+TXT_RANDOM_PGUARD_06 = "le pouvoir est le chemin de la gloire. Suivre l'Ordre c'est suivre ce chemin!";
+TXT_RANDOM_PGUARD_07 = "Prends ta place parmi les justes, rejoins-nous !";
+TXT_RANDOM_PGUARD_08 = "L'Ordre protege les siens.";
+TXT_RANDOM_PGUARD_09 = "Les Acolytes ? Ils n'ont pas encore ete temoins de la vraie gloire de l'Ordre.";
+TXT_RANDOM_PGUARD_10 = "S'il y a une once de gloire dans ce corps pathetique, ceux de l'Ordre te prendront parmi les leurs.";
+
+TXT_RANDOMGOODBYE_1 = "Au revoir !";
+TXT_RANDOMGOODBYE_2 = "Merci, au revoir !";
+TXT_RANDOMGOODBYE_3 = "A plus tard !";
+TXT_HAVEENOUGH		= "Vous avez l'air d'en avoir assez !";
+TXT_GOAWAY			= "Allez-vous en !";
+
+TXT_COMM0			= "Message recu.";
+TXT_COMM1			= "Message recu de Blackbird";
+
+TXT_TRADE			=  " pour %u";
+
+SSKILL_BABY			= "Entrainement";
+SSKILL_EASY			= "Recrue";
+SSKILL_NORMAL		= "Veteran";
+SSKILL_NIGHTMARE	= "Massacre!";
+

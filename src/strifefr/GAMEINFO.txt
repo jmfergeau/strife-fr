@@ -1,0 +1,2 @@
+IWAD = "STRIFE1.WAD"
+STARTUPTITLE = "Strife: La quete du Sigil"
