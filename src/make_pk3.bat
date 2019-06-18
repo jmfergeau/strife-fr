@@ -13,7 +13,7 @@ set pk3name2=sve-fr
 if exist %pk3name1%.pk3 del %pk3name1%.pk3
 if exist %pk3name2%.pk3 del %pk3name2%.pk3
 
-cd src\%pk3name1%
+cd %pk3name1%
 %sevenzippath%\7z.exe a -r -ssw -tzip ..\..\%pk3name1%.pk3 "*" 
 
 cd ..\%pk3name2%
